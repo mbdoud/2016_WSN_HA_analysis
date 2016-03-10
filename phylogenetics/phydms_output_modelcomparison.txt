@@ -1,0 +1,17 @@
+====================================================== ====== ============== =========================================================================================
+model                                                  AIC    log likelihood number parameters (optimized + empirical): optimized values                              
+====================================================== ====== ============== =========================================================================================
+ExpCM_Overall-WSNHA_merged_prefs_renumbered            0.0    -14933.5       6 (6 + 0): beta = 1.82, omega = 0.51, kappa = 4.95, phiA = 0.40, phiC = 0.18, phiG = 0.20
+ExpCM_2016-WSNHA_merged_prefs_renumbered               197.6  -15032.3       6 (6 + 0): beta = 1.80, omega = 0.46, kappa = 5.06, phiA = 0.40, phiC = 0.18, phiG = 0.20
+ExpCM_Thyagarajan2014-WSNHA_merged_prefs_renumbered    341.2  -15104.1       6 (6 + 0): beta = 1.40, omega = 0.46, kappa = 4.90, phiA = 0.39, phiC = 0.18, phiG = 0.20
+ExpCM_2016-WSNHA-rep1_prefs_trimmed_renumbered         460.2  -15163.6       6 (6 + 0): beta = 1.52, omega = 0.43, kappa = 5.05, phiA = 0.39, phiC = 0.18, phiG = 0.20
+ExpCM_2016-WSNHA-rep2_prefs_trimmed_renumbered         524.4  -15195.7       6 (6 + 0): beta = 1.46, omega = 0.41, kappa = 5.08, phiA = 0.39, phiC = 0.18, phiG = 0.20
+ExpCM_Thyagarajan2014-rep3_prefs_trimmed_renumbered    632.4  -15249.7       6 (6 + 0): beta = 1.06, omega = 0.42, kappa = 4.95, phiA = 0.39, phiC = 0.18, phiG = 0.20
+ExpCM_2016-WSNHA-rep3_prefs_trimmed_renumbered         706.8  -15286.9       6 (6 + 0): beta = 1.44, omega = 0.39, kappa = 5.04, phiA = 0.39, phiC = 0.18, phiG = 0.20
+ExpCM_Thyagarajan2014-rep1_prefs_trimmed_renumbered    829.8  -15348.4       6 (6 + 0): beta = 1.11, omega = 0.39, kappa = 4.95, phiA = 0.39, phiC = 0.19, phiG = 0.20
+ExpCM_Thyagarajan2014-rep2_prefs_trimmed_renumbered    1009.4 -15438.2       6 (6 + 0): beta = 0.88, omega = 0.38, kappa = 5.07, phiA = 0.38, phiC = 0.18, phiG = 0.20
+YNGKP_M8                                               2156.8 -16003.9       14 (5 + 9): pomegas = 0.01, omegas = 1.91, betap = 0.02, betaq = 0.76, kappa = 4.94      
+averaged_ExpCM_Overall-WSNHA_merged_prefs_renumbered   2971.6 -16419.3       6 (6 + 0): beta = 0.50, omega = 0.20, kappa = 5.38, phiA = 0.38, phiC = 0.18, phiG = 0.21
+YNGKP_M0                                               2980.8 -16418.9       11 (2 + 9): omega = 0.19, kappa = 4.88                                                   
+randomized_ExpCM_Overall-WSNHA_merged_prefs_renumbered 2993.4 -16430.2       6 (6 + 0): beta = 0.10, omega = 0.20, kappa = 5.38, phiA = 0.38, phiC = 0.18, phiG = 0.21
+====================================================== ====== ============== =========================================================================================

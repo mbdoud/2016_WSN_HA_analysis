@@ -1,0 +1,3 @@
+#Trim sites 1 and 566, the start and stop codons, from preferences files before phylogenetic analysis
+1
+566

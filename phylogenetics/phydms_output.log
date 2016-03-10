@@ -1,0 +1,197 @@
+2016-02-26 09:38:26,138 - INFO - Beginning execution of phydms_comprehensive in directory /fh/fast/bloom_j/grp/mike/2016_WSN_HA_analysis_forpaper/phylogenetics
+
+2016-02-26 09:38:26,138 - INFO - Progress is being logged to phydms_output.log
+
+2016-02-26 09:38:26,139 - INFO - Version information:
+	Time and date: Fri Feb 26 09:38:23 2016
+	Platform: Linux-3.13.0-68-generic-x86_64-with-Ubuntu-14.04-trusty
+	Python version: 2.7.6 (default, Jun 22 2015, 17:58:13)  [GCC 4.8.2]
+	phydms version: 1.1.0
+	Bio version: 1.66
+	cython version: 0.23.4
+	dms_tools version: 1.1.12
+	scipy version: 0.17.0
+	matplotlib version: 1.4.2
+
+2016-02-26 09:38:26,139 - INFO - Parsed the following command-line arguments:
+	randprefs = False
+	omegabysite_fixsyn = False
+	treetopology = None
+	prefsfiles = ['/fh/fast/bloom_j/grp/mike/2016_WSN_HA_analysis_forpaper/preferences/2016-WSNHA-rep1_prefs_trimmed_renumbered.txt', '/fh/fast/bloom_j/grp/mike/2016_WSN_HA_analysis_forpaper/preferences/2016-WSNHA-rep2_prefs_trimmed_renumbered.txt', '/fh/fast/bloom_j/grp/mike/2016_WSN_HA_analysis_forpaper/preferences/2016-WSNHA-rep3_prefs_trimmed_renumbered.txt', '/fh/fast/bloom_j/grp/mike/2016_WSN_HA_analysis_forpaper/preferences/2016-WSNHA_merged_prefs_renumbered.txt', '/fh/fast/bloom_j/grp/mike/2016_WSN_HA_analysis_forpaper/preferences/Overall-WSNHA_merged_prefs_renumbered.txt', '/fh/fast/bloom_j/grp/mike/2016_WSN_HA_analysis_forpaper/Thyagarajan2014/Thyagarajan2014-rep1_prefs_trimmed_renumbered.txt', '/fh/fast/bloom_j/grp/mike/2016_WSN_HA_analysis_forpaper/Thyagarajan2014/Thyagarajan2014-rep2_prefs_trimmed_renumbered.txt', '/fh/fast/bloom_j/grp/mike/2016_WSN_HA_analysis_forpaper/Thyagarajan2014/Thyagarajan2014-rep3_prefs_trimmed_renumbered.txt', '/fh/fast/bloom_j/grp/mike/2016_WSN_HA_analysis_forpaper/Thyagarajan2014/Thyagarajan2014-WSNHA_merged_prefs_renumbered.txt']
+	nostringencybysite = False
+	ncpus = -1
+	useLog = False
+	yngkp = M8
+	nodiffprefsbysite = True
+	noavgprefs = False
+	noomegabysite = False
+	avgrandcontrol = /fh/fast/bloom_j/grp/mike/2016_WSN_HA_analysis_forpaper/preferences/Overall-WSNHA_merged_prefs_renumbered.txt
+	outprefix = phydms_output_
+	diffprefconc = None
+	use_existing = False
+	alignment = /fh/fast/bloom_j/grp/mike/2016_WSN_HA_analysis_forpaper/phylogenetics/H1_1prYearHostSubtype_alignment.fasta
+
+2016-02-26 09:38:26,139 - INFO - Checking that the alignment /fh/fast/bloom_j/grp/mike/2016_WSN_HA_analysis_forpaper/phylogenetics/H1_1prYearHostSubtype_alignment.fasta is valid...
+2016-02-26 09:38:27,560 - INFO - Valid alignment specifying 93 sequences of length 1692.
+
+2016-02-26 09:38:27,560 - INFO - Will use all 16 available CPUs.
+
+2016-02-26 09:38:27,585 - INFO - Inferring topology using the YNGKP_M0 model starting from a simple neighbor joining tree. The command is: phydms /fh/fast/bloom_j/grp/mike/2016_WSN_HA_analysis_forpaper/phylogenetics/H1_1prYearHostSubtype_alignment.fasta nj YNGKP_M0 phydms_output_YNGKP_M0 --infertopology --ncpus 1
+2016-02-26 10:18:10,577 - INFO - Found expected output file phydms_output_YNGKP_M0.log
+2016-02-26 10:18:10,579 - INFO - Found expected output file phydms_output_YNGKP_M0_tree.newick
+2016-02-26 10:18:10,579 - INFO - Found expected output file phydms_output_YNGKP_M0_loglikelihood.txt
+2016-02-26 10:18:10,579 - INFO - Found expected output file phydms_output_YNGKP_M0_modelparams.txt
+2016-02-26 10:18:10,579 - INFO - Analysis successful for YNGKP_M0
+
+2016-02-26 10:18:10,580 - INFO - Starting analysis to optimize tree in phydms_output_YNGKP_M0_tree.newick using model ExpCM_Thyagarajan2014-WSNHA_merged_prefs_renumbered. The command is: phydms /fh/fast/bloom_j/grp/mike/2016_WSN_HA_analysis_forpaper/phylogenetics/H1_1prYearHostSubtype_alignment.fasta phydms_output_YNGKP_M0_tree.newick ExpCM_/fh/fast/bloom_j/grp/mike/2016_WSN_HA_analysis_forpaper/Thyagarajan2014/Thyagarajan2014-WSNHA_merged_prefs_renumbered.txt phydms_output_ExpCM_Thyagarajan2014-WSNHA_merged_prefs_renumbered --omegabysite --stringencybysite --ncpus 1
+
+2016-02-26 10:18:10,580 - INFO - Starting analysis to optimize tree in phydms_output_YNGKP_M0_tree.newick using model averaged_ExpCM_Overall-WSNHA_merged_prefs_renumbered. The command is: phydms /fh/fast/bloom_j/grp/mike/2016_WSN_HA_analysis_forpaper/phylogenetics/H1_1prYearHostSubtype_alignment.fasta phydms_output_YNGKP_M0_tree.newick ExpCM_/fh/fast/bloom_j/grp/mike/2016_WSN_HA_analysis_forpaper/preferences/Overall-WSNHA_merged_prefs_renumbered.txt phydms_output_averaged_ExpCM_Overall-WSNHA_merged_prefs_renumbered --omegabysite --stringencybysite --avgprefs --ncpus 1
+
+2016-02-26 10:18:10,580 - INFO - Starting analysis to optimize tree in phydms_output_YNGKP_M0_tree.newick using model ExpCM_2016-WSNHA-rep1_prefs_trimmed_renumbered. The command is: phydms /fh/fast/bloom_j/grp/mike/2016_WSN_HA_analysis_forpaper/phylogenetics/H1_1prYearHostSubtype_alignment.fasta phydms_output_YNGKP_M0_tree.newick ExpCM_/fh/fast/bloom_j/grp/mike/2016_WSN_HA_analysis_forpaper/preferences/2016-WSNHA-rep1_prefs_trimmed_renumbered.txt phydms_output_ExpCM_2016-WSNHA-rep1_prefs_trimmed_renumbered --omegabysite --stringencybysite --ncpus 1
+
+2016-02-26 10:18:10,580 - INFO - Starting analysis to optimize tree in phydms_output_YNGKP_M0_tree.newick using model ExpCM_2016-WSNHA-rep2_prefs_trimmed_renumbered. The command is: phydms /fh/fast/bloom_j/grp/mike/2016_WSN_HA_analysis_forpaper/phylogenetics/H1_1prYearHostSubtype_alignment.fasta phydms_output_YNGKP_M0_tree.newick ExpCM_/fh/fast/bloom_j/grp/mike/2016_WSN_HA_analysis_forpaper/preferences/2016-WSNHA-rep2_prefs_trimmed_renumbered.txt phydms_output_ExpCM_2016-WSNHA-rep2_prefs_trimmed_renumbered --omegabysite --stringencybysite --ncpus 1
+
+2016-02-26 10:18:10,580 - INFO - Starting analysis to optimize tree in phydms_output_YNGKP_M0_tree.newick using model ExpCM_Thyagarajan2014-rep3_prefs_trimmed_renumbered. The command is: phydms /fh/fast/bloom_j/grp/mike/2016_WSN_HA_analysis_forpaper/phylogenetics/H1_1prYearHostSubtype_alignment.fasta phydms_output_YNGKP_M0_tree.newick ExpCM_/fh/fast/bloom_j/grp/mike/2016_WSN_HA_analysis_forpaper/Thyagarajan2014/Thyagarajan2014-rep3_prefs_trimmed_renumbered.txt phydms_output_ExpCM_Thyagarajan2014-rep3_prefs_trimmed_renumbered --omegabysite --stringencybysite --ncpus 1
+
+2016-02-26 10:18:10,581 - INFO - Starting analysis to optimize tree in phydms_output_YNGKP_M0_tree.newick using model ExpCM_Thyagarajan2014-rep1_prefs_trimmed_renumbered. The command is: phydms /fh/fast/bloom_j/grp/mike/2016_WSN_HA_analysis_forpaper/phylogenetics/H1_1prYearHostSubtype_alignment.fasta phydms_output_YNGKP_M0_tree.newick ExpCM_/fh/fast/bloom_j/grp/mike/2016_WSN_HA_analysis_forpaper/Thyagarajan2014/Thyagarajan2014-rep1_prefs_trimmed_renumbered.txt phydms_output_ExpCM_Thyagarajan2014-rep1_prefs_trimmed_renumbered --omegabysite --stringencybysite --ncpus 1
+
+2016-02-26 10:18:10,581 - INFO - Starting analysis to optimize tree in phydms_output_YNGKP_M0_tree.newick using model YNGKP_M8. The command is: phydms /fh/fast/bloom_j/grp/mike/2016_WSN_HA_analysis_forpaper/phylogenetics/H1_1prYearHostSubtype_alignment.fasta phydms_output_YNGKP_M0_tree.newick YNGKP_M8 phydms_output_YNGKP_M8 --omegabysite --ncpus 1
+
+2016-02-26 10:18:10,581 - INFO - Starting analysis to optimize tree in phydms_output_YNGKP_M0_tree.newick using model ExpCM_2016-WSNHA-rep3_prefs_trimmed_renumbered. The command is: phydms /fh/fast/bloom_j/grp/mike/2016_WSN_HA_analysis_forpaper/phylogenetics/H1_1prYearHostSubtype_alignment.fasta phydms_output_YNGKP_M0_tree.newick ExpCM_/fh/fast/bloom_j/grp/mike/2016_WSN_HA_analysis_forpaper/preferences/2016-WSNHA-rep3_prefs_trimmed_renumbered.txt phydms_output_ExpCM_2016-WSNHA-rep3_prefs_trimmed_renumbered --omegabysite --stringencybysite --ncpus 1
+
+2016-02-26 10:18:10,581 - INFO - Starting analysis to optimize tree in phydms_output_YNGKP_M0_tree.newick using model randomized_ExpCM_Overall-WSNHA_merged_prefs_renumbered. The command is: phydms /fh/fast/bloom_j/grp/mike/2016_WSN_HA_analysis_forpaper/phylogenetics/H1_1prYearHostSubtype_alignment.fasta phydms_output_YNGKP_M0_tree.newick ExpCM_/fh/fast/bloom_j/grp/mike/2016_WSN_HA_analysis_forpaper/preferences/Overall-WSNHA_merged_prefs_renumbered.txt phydms_output_randomized_ExpCM_Overall-WSNHA_merged_prefs_renumbered --omegabysite --stringencybysite --randprefs --ncpus 1
+
+2016-02-26 10:18:10,581 - INFO - Starting analysis to optimize tree in phydms_output_YNGKP_M0_tree.newick using model ExpCM_2016-WSNHA_merged_prefs_renumbered. The command is: phydms /fh/fast/bloom_j/grp/mike/2016_WSN_HA_analysis_forpaper/phylogenetics/H1_1prYearHostSubtype_alignment.fasta phydms_output_YNGKP_M0_tree.newick ExpCM_/fh/fast/bloom_j/grp/mike/2016_WSN_HA_analysis_forpaper/preferences/2016-WSNHA_merged_prefs_renumbered.txt phydms_output_ExpCM_2016-WSNHA_merged_prefs_renumbered --omegabysite --stringencybysite --ncpus 1
+
+2016-02-26 10:18:10,581 - INFO - Starting analysis to optimize tree in phydms_output_YNGKP_M0_tree.newick using model ExpCM_Thyagarajan2014-rep2_prefs_trimmed_renumbered. The command is: phydms /fh/fast/bloom_j/grp/mike/2016_WSN_HA_analysis_forpaper/phylogenetics/H1_1prYearHostSubtype_alignment.fasta phydms_output_YNGKP_M0_tree.newick ExpCM_/fh/fast/bloom_j/grp/mike/2016_WSN_HA_analysis_forpaper/Thyagarajan2014/Thyagarajan2014-rep2_prefs_trimmed_renumbered.txt phydms_output_ExpCM_Thyagarajan2014-rep2_prefs_trimmed_renumbered --omegabysite --stringencybysite --ncpus 1
+
+2016-02-26 10:18:10,581 - INFO - Starting analysis to optimize tree in phydms_output_YNGKP_M0_tree.newick using model ExpCM_Overall-WSNHA_merged_prefs_renumbered. The command is: phydms /fh/fast/bloom_j/grp/mike/2016_WSN_HA_analysis_forpaper/phylogenetics/H1_1prYearHostSubtype_alignment.fasta phydms_output_YNGKP_M0_tree.newick ExpCM_/fh/fast/bloom_j/grp/mike/2016_WSN_HA_analysis_forpaper/preferences/Overall-WSNHA_merged_prefs_renumbered.txt phydms_output_ExpCM_Overall-WSNHA_merged_prefs_renumbered --omegabysite --stringencybysite --ncpus 1
+
+2016-02-26 20:21:54,588 - INFO - Analysis completed for YNGKP_M8
+2016-02-26 20:21:54,605 - INFO - Found expected output file phydms_output_YNGKP_M8.log
+2016-02-26 20:21:54,605 - INFO - Found expected output file phydms_output_YNGKP_M8_tree.newick
+2016-02-26 20:21:54,609 - INFO - Found expected output file phydms_output_YNGKP_M8_loglikelihood.txt
+2016-02-26 20:21:54,613 - INFO - Found expected output file phydms_output_YNGKP_M8_modelparams.txt
+2016-02-26 20:21:54,613 - INFO - Found expected output file phydms_output_YNGKP_M8_omegabysite.txt
+2016-02-26 20:21:54,613 - INFO - Analysis successful for YNGKP_M8
+
+2016-02-27 10:25:22,564 - INFO - Analysis completed for randomized_ExpCM_Overall-WSNHA_merged_prefs_renumbered
+2016-02-27 10:25:22,566 - INFO - Found expected output file phydms_output_randomized_ExpCM_Overall-WSNHA_merged_prefs_renumbered.log
+2016-02-27 10:25:22,566 - INFO - Found expected output file phydms_output_randomized_ExpCM_Overall-WSNHA_merged_prefs_renumbered_tree.newick
+2016-02-27 10:25:22,566 - INFO - Found expected output file phydms_output_randomized_ExpCM_Overall-WSNHA_merged_prefs_renumbered_loglikelihood.txt
+2016-02-27 10:25:22,566 - INFO - Found expected output file phydms_output_randomized_ExpCM_Overall-WSNHA_merged_prefs_renumbered_modelparams.txt
+2016-02-27 10:25:22,567 - INFO - Found expected output file phydms_output_randomized_ExpCM_Overall-WSNHA_merged_prefs_renumbered_omegabysite.txt
+2016-02-27 10:25:22,567 - INFO - Found expected output file phydms_output_randomized_ExpCM_Overall-WSNHA_merged_prefs_renumbered_stringencybysite.txt
+2016-02-27 10:25:22,567 - INFO - Analysis successful for randomized_ExpCM_Overall-WSNHA_merged_prefs_renumbered
+
+2016-02-27 11:30:18,890 - INFO - Analysis completed for ExpCM_Thyagarajan2014-rep2_prefs_trimmed_renumbered
+2016-02-27 11:30:18,892 - INFO - Found expected output file phydms_output_ExpCM_Thyagarajan2014-rep2_prefs_trimmed_renumbered.log
+2016-02-27 11:30:18,893 - INFO - Found expected output file phydms_output_ExpCM_Thyagarajan2014-rep2_prefs_trimmed_renumbered_tree.newick
+2016-02-27 11:30:18,893 - INFO - Found expected output file phydms_output_ExpCM_Thyagarajan2014-rep2_prefs_trimmed_renumbered_loglikelihood.txt
+2016-02-27 11:30:18,894 - INFO - Found expected output file phydms_output_ExpCM_Thyagarajan2014-rep2_prefs_trimmed_renumbered_modelparams.txt
+2016-02-27 11:30:18,894 - INFO - Found expected output file phydms_output_ExpCM_Thyagarajan2014-rep2_prefs_trimmed_renumbered_omegabysite.txt
+2016-02-27 11:30:18,894 - INFO - Found expected output file phydms_output_ExpCM_Thyagarajan2014-rep2_prefs_trimmed_renumbered_stringencybysite.txt
+2016-02-27 11:30:18,895 - INFO - Analysis successful for ExpCM_Thyagarajan2014-rep2_prefs_trimmed_renumbered
+
+2016-02-27 11:32:13,021 - INFO - Analysis completed for ExpCM_Thyagarajan2014-rep1_prefs_trimmed_renumbered
+2016-02-27 11:32:13,022 - INFO - Found expected output file phydms_output_ExpCM_Thyagarajan2014-rep1_prefs_trimmed_renumbered.log
+2016-02-27 11:32:13,022 - INFO - Found expected output file phydms_output_ExpCM_Thyagarajan2014-rep1_prefs_trimmed_renumbered_tree.newick
+2016-02-27 11:32:13,023 - INFO - Found expected output file phydms_output_ExpCM_Thyagarajan2014-rep1_prefs_trimmed_renumbered_loglikelihood.txt
+2016-02-27 11:32:13,024 - INFO - Found expected output file phydms_output_ExpCM_Thyagarajan2014-rep1_prefs_trimmed_renumbered_modelparams.txt
+2016-02-27 11:32:13,024 - INFO - Found expected output file phydms_output_ExpCM_Thyagarajan2014-rep1_prefs_trimmed_renumbered_omegabysite.txt
+2016-02-27 11:32:13,024 - INFO - Found expected output file phydms_output_ExpCM_Thyagarajan2014-rep1_prefs_trimmed_renumbered_stringencybysite.txt
+2016-02-27 11:32:13,024 - INFO - Analysis successful for ExpCM_Thyagarajan2014-rep1_prefs_trimmed_renumbered
+
+2016-02-27 11:55:36,580 - INFO - Analysis completed for averaged_ExpCM_Overall-WSNHA_merged_prefs_renumbered
+2016-02-27 11:55:36,582 - INFO - Found expected output file phydms_output_averaged_ExpCM_Overall-WSNHA_merged_prefs_renumbered.log
+2016-02-27 11:55:36,582 - INFO - Found expected output file phydms_output_averaged_ExpCM_Overall-WSNHA_merged_prefs_renumbered_tree.newick
+2016-02-27 11:55:36,582 - INFO - Found expected output file phydms_output_averaged_ExpCM_Overall-WSNHA_merged_prefs_renumbered_loglikelihood.txt
+2016-02-27 11:55:36,583 - INFO - Found expected output file phydms_output_averaged_ExpCM_Overall-WSNHA_merged_prefs_renumbered_modelparams.txt
+2016-02-27 11:55:36,584 - INFO - Found expected output file phydms_output_averaged_ExpCM_Overall-WSNHA_merged_prefs_renumbered_omegabysite.txt
+2016-02-27 11:55:36,584 - INFO - Found expected output file phydms_output_averaged_ExpCM_Overall-WSNHA_merged_prefs_renumbered_stringencybysite.txt
+2016-02-27 11:55:36,584 - INFO - Analysis successful for averaged_ExpCM_Overall-WSNHA_merged_prefs_renumbered
+
+2016-02-27 12:21:05,269 - INFO - Analysis completed for ExpCM_Thyagarajan2014-rep3_prefs_trimmed_renumbered
+2016-02-27 12:21:05,271 - INFO - Found expected output file phydms_output_ExpCM_Thyagarajan2014-rep3_prefs_trimmed_renumbered.log
+2016-02-27 12:21:05,272 - INFO - Found expected output file phydms_output_ExpCM_Thyagarajan2014-rep3_prefs_trimmed_renumbered_tree.newick
+2016-02-27 12:21:05,272 - INFO - Found expected output file phydms_output_ExpCM_Thyagarajan2014-rep3_prefs_trimmed_renumbered_loglikelihood.txt
+2016-02-27 12:21:05,273 - INFO - Found expected output file phydms_output_ExpCM_Thyagarajan2014-rep3_prefs_trimmed_renumbered_modelparams.txt
+2016-02-27 12:21:05,274 - INFO - Found expected output file phydms_output_ExpCM_Thyagarajan2014-rep3_prefs_trimmed_renumbered_omegabysite.txt
+2016-02-27 12:21:05,274 - INFO - Found expected output file phydms_output_ExpCM_Thyagarajan2014-rep3_prefs_trimmed_renumbered_stringencybysite.txt
+2016-02-27 12:21:05,274 - INFO - Analysis successful for ExpCM_Thyagarajan2014-rep3_prefs_trimmed_renumbered
+
+2016-02-27 12:41:37,630 - INFO - Analysis completed for ExpCM_2016-WSNHA-rep3_prefs_trimmed_renumbered
+2016-02-27 12:41:37,632 - INFO - Found expected output file phydms_output_ExpCM_2016-WSNHA-rep3_prefs_trimmed_renumbered.log
+2016-02-27 12:41:37,632 - INFO - Found expected output file phydms_output_ExpCM_2016-WSNHA-rep3_prefs_trimmed_renumbered_tree.newick
+2016-02-27 12:41:37,633 - INFO - Found expected output file phydms_output_ExpCM_2016-WSNHA-rep3_prefs_trimmed_renumbered_loglikelihood.txt
+2016-02-27 12:41:37,633 - INFO - Found expected output file phydms_output_ExpCM_2016-WSNHA-rep3_prefs_trimmed_renumbered_modelparams.txt
+2016-02-27 12:41:37,634 - INFO - Found expected output file phydms_output_ExpCM_2016-WSNHA-rep3_prefs_trimmed_renumbered_omegabysite.txt
+2016-02-27 12:41:37,634 - INFO - Found expected output file phydms_output_ExpCM_2016-WSNHA-rep3_prefs_trimmed_renumbered_stringencybysite.txt
+2016-02-27 12:41:37,634 - INFO - Analysis successful for ExpCM_2016-WSNHA-rep3_prefs_trimmed_renumbered
+
+2016-02-27 12:50:35,222 - INFO - Analysis completed for ExpCM_2016-WSNHA-rep2_prefs_trimmed_renumbered
+2016-02-27 12:50:35,223 - INFO - Found expected output file phydms_output_ExpCM_2016-WSNHA-rep2_prefs_trimmed_renumbered.log
+2016-02-27 12:50:35,224 - INFO - Found expected output file phydms_output_ExpCM_2016-WSNHA-rep2_prefs_trimmed_renumbered_tree.newick
+2016-02-27 12:50:35,224 - INFO - Found expected output file phydms_output_ExpCM_2016-WSNHA-rep2_prefs_trimmed_renumbered_loglikelihood.txt
+2016-02-27 12:50:35,225 - INFO - Found expected output file phydms_output_ExpCM_2016-WSNHA-rep2_prefs_trimmed_renumbered_modelparams.txt
+2016-02-27 12:50:35,225 - INFO - Found expected output file phydms_output_ExpCM_2016-WSNHA-rep2_prefs_trimmed_renumbered_omegabysite.txt
+2016-02-27 12:50:35,226 - INFO - Found expected output file phydms_output_ExpCM_2016-WSNHA-rep2_prefs_trimmed_renumbered_stringencybysite.txt
+2016-02-27 12:50:35,226 - INFO - Analysis successful for ExpCM_2016-WSNHA-rep2_prefs_trimmed_renumbered
+
+2016-02-27 14:35:17,113 - INFO - Analysis completed for ExpCM_2016-WSNHA-rep1_prefs_trimmed_renumbered
+2016-02-27 14:35:17,115 - INFO - Found expected output file phydms_output_ExpCM_2016-WSNHA-rep1_prefs_trimmed_renumbered.log
+2016-02-27 14:35:17,115 - INFO - Found expected output file phydms_output_ExpCM_2016-WSNHA-rep1_prefs_trimmed_renumbered_tree.newick
+2016-02-27 14:35:17,116 - INFO - Found expected output file phydms_output_ExpCM_2016-WSNHA-rep1_prefs_trimmed_renumbered_loglikelihood.txt
+2016-02-27 14:35:17,117 - INFO - Found expected output file phydms_output_ExpCM_2016-WSNHA-rep1_prefs_trimmed_renumbered_modelparams.txt
+2016-02-27 14:35:17,117 - INFO - Found expected output file phydms_output_ExpCM_2016-WSNHA-rep1_prefs_trimmed_renumbered_omegabysite.txt
+2016-02-27 14:35:17,117 - INFO - Found expected output file phydms_output_ExpCM_2016-WSNHA-rep1_prefs_trimmed_renumbered_stringencybysite.txt
+2016-02-27 14:35:17,118 - INFO - Analysis successful for ExpCM_2016-WSNHA-rep1_prefs_trimmed_renumbered
+
+2016-02-27 14:40:49,478 - INFO - Analysis completed for ExpCM_Overall-WSNHA_merged_prefs_renumbered
+2016-02-27 14:40:49,480 - INFO - Found expected output file phydms_output_ExpCM_Overall-WSNHA_merged_prefs_renumbered.log
+2016-02-27 14:40:49,480 - INFO - Found expected output file phydms_output_ExpCM_Overall-WSNHA_merged_prefs_renumbered_tree.newick
+2016-02-27 14:40:49,481 - INFO - Found expected output file phydms_output_ExpCM_Overall-WSNHA_merged_prefs_renumbered_loglikelihood.txt
+2016-02-27 14:40:49,481 - INFO - Found expected output file phydms_output_ExpCM_Overall-WSNHA_merged_prefs_renumbered_modelparams.txt
+2016-02-27 14:40:49,482 - INFO - Found expected output file phydms_output_ExpCM_Overall-WSNHA_merged_prefs_renumbered_omegabysite.txt
+2016-02-27 14:40:49,482 - INFO - Found expected output file phydms_output_ExpCM_Overall-WSNHA_merged_prefs_renumbered_stringencybysite.txt
+2016-02-27 14:40:49,482 - INFO - Analysis successful for ExpCM_Overall-WSNHA_merged_prefs_renumbered
+
+2016-02-27 14:50:00,072 - INFO - Analysis completed for ExpCM_Thyagarajan2014-WSNHA_merged_prefs_renumbered
+2016-02-27 14:50:00,074 - INFO - Found expected output file phydms_output_ExpCM_Thyagarajan2014-WSNHA_merged_prefs_renumbered.log
+2016-02-27 14:50:00,074 - INFO - Found expected output file phydms_output_ExpCM_Thyagarajan2014-WSNHA_merged_prefs_renumbered_tree.newick
+2016-02-27 14:50:00,075 - INFO - Found expected output file phydms_output_ExpCM_Thyagarajan2014-WSNHA_merged_prefs_renumbered_loglikelihood.txt
+2016-02-27 14:50:00,075 - INFO - Found expected output file phydms_output_ExpCM_Thyagarajan2014-WSNHA_merged_prefs_renumbered_modelparams.txt
+2016-02-27 14:50:00,076 - INFO - Found expected output file phydms_output_ExpCM_Thyagarajan2014-WSNHA_merged_prefs_renumbered_omegabysite.txt
+2016-02-27 14:50:00,076 - INFO - Found expected output file phydms_output_ExpCM_Thyagarajan2014-WSNHA_merged_prefs_renumbered_stringencybysite.txt
+2016-02-27 14:50:00,076 - INFO - Analysis successful for ExpCM_Thyagarajan2014-WSNHA_merged_prefs_renumbered
+
+2016-02-27 19:36:06,393 - INFO - Analysis completed for ExpCM_2016-WSNHA_merged_prefs_renumbered
+2016-02-27 19:36:06,395 - INFO - Found expected output file phydms_output_ExpCM_2016-WSNHA_merged_prefs_renumbered.log
+2016-02-27 19:36:06,396 - INFO - Found expected output file phydms_output_ExpCM_2016-WSNHA_merged_prefs_renumbered_tree.newick
+2016-02-27 19:36:06,396 - INFO - Found expected output file phydms_output_ExpCM_2016-WSNHA_merged_prefs_renumbered_loglikelihood.txt
+2016-02-27 19:36:06,397 - INFO - Found expected output file phydms_output_ExpCM_2016-WSNHA_merged_prefs_renumbered_modelparams.txt
+2016-02-27 19:36:06,397 - INFO - Found expected output file phydms_output_ExpCM_2016-WSNHA_merged_prefs_renumbered_omegabysite.txt
+2016-02-27 19:36:06,397 - INFO - Found expected output file phydms_output_ExpCM_2016-WSNHA_merged_prefs_renumbered_stringencybysite.txt
+2016-02-27 19:36:06,398 - INFO - Analysis successful for ExpCM_2016-WSNHA_merged_prefs_renumbered
+
+2016-02-27 19:36:07,424 - INFO - Tabulating model comparisons and writing to phydms_output_modelcomparison.txt
+2016-02-27 19:36:07,450 - INFO - Here are the results of the model comparison:
+	====================================================== ====== ============== =========================================================================================
+	model                                                  AIC    log likelihood number parameters (optimized + empirical): optimized values                              
+	====================================================== ====== ============== =========================================================================================
+	ExpCM_Overall-WSNHA_merged_prefs_renumbered            0.0    -14933.5       6 (6 + 0): beta = 1.82, omega = 0.51, kappa = 4.95, phiA = 0.40, phiC = 0.18, phiG = 0.20
+	ExpCM_2016-WSNHA_merged_prefs_renumbered               197.6  -15032.3       6 (6 + 0): beta = 1.80, omega = 0.46, kappa = 5.06, phiA = 0.40, phiC = 0.18, phiG = 0.20
+	ExpCM_Thyagarajan2014-WSNHA_merged_prefs_renumbered    341.2  -15104.1       6 (6 + 0): beta = 1.40, omega = 0.46, kappa = 4.90, phiA = 0.39, phiC = 0.18, phiG = 0.20
+	ExpCM_2016-WSNHA-rep1_prefs_trimmed_renumbered         460.2  -15163.6       6 (6 + 0): beta = 1.52, omega = 0.43, kappa = 5.05, phiA = 0.39, phiC = 0.18, phiG = 0.20
+	ExpCM_2016-WSNHA-rep2_prefs_trimmed_renumbered         524.4  -15195.7       6 (6 + 0): beta = 1.46, omega = 0.41, kappa = 5.08, phiA = 0.39, phiC = 0.18, phiG = 0.20
+	ExpCM_Thyagarajan2014-rep3_prefs_trimmed_renumbered    632.4  -15249.7       6 (6 + 0): beta = 1.06, omega = 0.42, kappa = 4.95, phiA = 0.39, phiC = 0.18, phiG = 0.20
+	ExpCM_2016-WSNHA-rep3_prefs_trimmed_renumbered         706.8  -15286.9       6 (6 + 0): beta = 1.44, omega = 0.39, kappa = 5.04, phiA = 0.39, phiC = 0.18, phiG = 0.20
+	ExpCM_Thyagarajan2014-rep1_prefs_trimmed_renumbered    829.8  -15348.4       6 (6 + 0): beta = 1.11, omega = 0.39, kappa = 4.95, phiA = 0.39, phiC = 0.19, phiG = 0.20
+	ExpCM_Thyagarajan2014-rep2_prefs_trimmed_renumbered    1009.4 -15438.2       6 (6 + 0): beta = 0.88, omega = 0.38, kappa = 5.07, phiA = 0.38, phiC = 0.18, phiG = 0.20
+	YNGKP_M8                                               2156.8 -16003.9       14 (5 + 9): pomegas = 0.01, omegas = 1.91, betap = 0.02, betaq = 0.76, kappa = 4.94      
+	averaged_ExpCM_Overall-WSNHA_merged_prefs_renumbered   2971.6 -16419.3       6 (6 + 0): beta = 0.50, omega = 0.20, kappa = 5.38, phiA = 0.38, phiC = 0.18, phiG = 0.21
+	YNGKP_M0                                               2980.8 -16418.9       11 (2 + 9): omega = 0.19, kappa = 4.88                                                   
+	randomized_ExpCM_Overall-WSNHA_merged_prefs_renumbered 2993.4 -16430.2       6 (6 + 0): beta = 0.10, omega = 0.20, kappa = 5.38, phiA = 0.38, phiC = 0.18, phiG = 0.21
+	====================================================== ====== ============== =========================================================================================
+	
+2016-02-27 19:36:07,450 - INFO - Successful completion of phydms_comprehensive

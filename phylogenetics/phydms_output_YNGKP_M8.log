@@ -1,0 +1,1215 @@
+2016-02-26 10:18:16,086 - INFO - Beginning execution of phydms in directory /fh/fast/bloom_j/grp/mike/2016_WSN_HA_analysis_forpaper/phylogenetics
+
+2016-02-26 10:18:16,086 - INFO - Progress is being logged to phydms_output_YNGKP_M8.log
+
+2016-02-26 10:18:16,086 - INFO - Version information:
+	Time and date: Fri Feb 26 10:18:16 2016
+	Platform: Linux-3.13.0-68-generic-x86_64-with-Ubuntu-14.04-trusty
+	Python version: 2.7.6 (default, Jun 22 2015, 17:58:13)  [GCC 4.8.2]
+	phydms version: 1.1.0
+	Bio version: 1.66
+	cython version: 0.23.4
+	dms_tools version: 1.1.12
+	scipy version: 0.17.0
+	matplotlib version: 1.4.2
+
+2016-02-26 10:18:16,086 - INFO - Parsed the following command-line arguments:
+	randprefs = False
+	tree = phydms_output_YNGKP_M0_tree.newick
+	ncpus = 1
+	avgprefs = False
+	seed = 1
+	outprefix = phydms_output_YNGKP_M8
+	alignment = /fh/fast/bloom_j/grp/mike/2016_WSN_HA_analysis_forpaper/phylogenetics/H1_1prYearHostSubtype_alignment.fasta
+	stringencybysite = False
+	recursion = S
+	no_optimize = False
+	fitF3X4 = False
+	debugsite = None
+	useLog = False
+	diffprefsprior = invquad
+	diffprefsbysite = False
+	diffprefconc = [150, 0.5]
+	infertopology = False
+	omegabysite_fixsyn = False
+	addrateparameter = False
+	omegabysite = True
+	fixbrlen = False
+	model = YNGKP_M8
+	minbrlen = 1e-06
+
+2016-02-26 10:18:16,086 - INFO - Seeding random number generator with 1
+
+2016-02-26 10:18:16,086 - INFO - Reading alignment from /fh/fast/bloom_j/grp/mike/2016_WSN_HA_analysis_forpaper/phylogenetics/H1_1prYearHostSubtype_alignment.fasta
+2016-02-26 10:18:17,397 - INFO - Read 93 aligned codon sequences from /fh/fast/bloom_j/grp/mike/2016_WSN_HA_analysis_forpaper/phylogenetics/H1_1prYearHostSubtype_alignment.fasta. Each sequence consists of 564 codons.
+
+2016-02-26 10:18:17,397 - INFO - The codon substitution model with be the M8 version of YNGKP (Yang, Nielsen, Goldman, and Pederson. Genetics. 155:431-449).
+2016-02-26 10:18:17,397 - INFO - The codon equilibrium frequencies will be set by F3X4, estimating the nine nucleotide frequencies empirically from the alignment frequencies.
+
+2016-02-26 10:18:17,397 - INFO - Reading tree from phydms_output_YNGKP_M0_tree.newick
+2016-02-26 10:18:17,400 - INFO - This tree has 93 tips nodes, matching the sequences in alignment.
+2016-02-26 10:18:17,404 - INFO - Adjusting all branch lengths to >= 1e-06.
+
+2016-02-26 10:18:17,409 - INFO - Creating Bio++ object to optimize likelihood...
+2016-02-26 10:18:22,275 - INFO - Created Bio++ object to optimize likelihood for the 564 codon sites of the 93 sequences.
+
+2016-02-26 10:18:22,275 - INFO - The initial log likelihood is -18017.4; now optimizing by maximum likelihood...
+2016-02-26 15:44:05,303 - INFO - Completed optimizing by maximum likelihood.
+2016-02-26 15:44:05,307 - INFO - Here is the optimized log likelihood (also being written to phydms_output_YNGKP_M8_loglikelihood.txt): -16003.9.
+2016-02-26 15:44:05,326 - INFO - Here are the optimized model parameters (also being written to phydms_output_YNGKP_M8_modelparams.txt):
+	kappa = 4.936102
+	omegas = 1.905278
+	p = 0.022134
+	p0 = 0.987524
+	q = 0.757482
+2016-02-26 15:44:05,340 - INFO - Here is the optimized tree (also being written to phydms_output_YNGKP_M8_tree.newick):
+(1957.50_STRAIN_A/Baylor/4052/1981_HOST_Human_SUBTYPE_H1N1_n1:0.0162747,(((1959.50_STRAIN_A/Memphis/23/1983_HOST_Human_SUBTYPE_H1N1_n1:0.00705632,(1960.50_STRAIN_A/Tonga/14/1984_HOST_Human_SUBTYPE_H1N1_n1:0.0143771,1958.50_STRAIN_A/ChristsHospital/157/1982_HOST_Human_SUBTYPE_H1N1_n1:0.00529824):0.0127456):0.0161766,((((((1973.50_STRAIN_A/Shanghai/2/1997_HOST_Human_SUBTYPE_H1N1_n1:0.00735583,(1977.54_STRAIN_A/Canterbury/63/2001_HOST_Human_SUBTYPE_H1N1_n1:0.0203865,((((((1983.16_STRAIN_A/Texas/UR06-0444/2007_HOST_Human_SUBTYPE_H1N1_n1:0.0117956,1982.50_STRAIN_A/Baden-Wuerttemberg/5/2006_HOST_Human_SUBTYPE_H1N1_n1:0.0117108):0.0163718,1981.07_STRAIN_A/Morioka/4/2005_HOST_Human_SUBTYPE_H1N1_n1:0.0247538):0.0136222,1984.00_STRAIN_A/Norway/38/2008_HOST_Human_SUBTYPE_H1N1_n1:0.0744092):1e-06,1979.50_STRAIN_A/HaNoi/BM857/2003_HOST_Human_SUBTYPE_H1N1_n1:0.0162552):0.00889025,1976.64_STRAIN_A/Canterbury/36/2000_HOST_Human_SUBTYPE_H1N1_n1:0.00617876):0.00477026,1975.50_STRAIN_A/NewCaledonia/20/1999_HOST_Human_SUBTYPE_H1N1_n1:0.00720765):0.00690345):0.0316511):0.00116619,1972.50_STRAIN_A/Nanchang/23/1996_HOST_Human_SUBTYPE_H1N1_n1:0.0132235):0.0549492,((1969.50_STRAIN_A/Florida/2/1993_HOST_Human_SUBTYPE_H1N1_n1:0.0219355,(((1971.50_STRAIN_A/Switzerland/5389/95_HOST_Human_SUBTYPE_H1N1_n1:1e-06,1974.50_STRAIN_A/Moscow/13/1998_HOST_Human_SUBTYPE_H1N1_n1:0.0251979):1e-06,1976.50_STRAIN_A/SouthAustralia/46/2000_HOST_Human_SUBTYPE_H1N1_n1:0.0438319):0.0404431,1968.50_STRAIN_A/Wellington/47/1992_HOST_Human_SUBTYPE_H1N1_n1:0.00892091):0.0148249):0.00157151,1967.50_STRAIN_A/Texas/36-JY2/1991_HOST_Human_SUBTYPE_H1N1_n1:0.0107961):0.00499323):0.0149265,1965.50_STRAIN_A/Suita/1/1989_HOST_Human_SUBTYPE_H1N1_n1:0.00721618):0.00911622,1964.50_STRAIN_A/Victoria/36/1988_HOST_Human_SUBTYPE_H1N1_n1:0.0236245):0.00344715,(1963.50_STRAIN_A/Memphis/4/1987_HOST_Human_SUBTYPE_H1N1_n1:0.0125946,1962.50_STRAIN_A/Texas/2922-3/1986_HOST_Human_SUBTYPE_H1N1_n1:0.00178274):0.00550492):0.0573361):1e-06,1956.50_STRAIN_A/Memphis/7/1980_HOST_Human_SUBTYPE_H1N1_n1:0.001781):0.00344996,((((1948.50_STRAIN_A/Albany/4835/1948_HOST_Human_SUBTYPE_H1N1_n1:0.00304865,(((1942.50_STRAIN_A/Bellamy/JY2/1942_HOST_Human_SUBTYPE_H1N1_n1:0.0303383,((1933.29_STRAIN_A/UnitedKingdom/1/1933_HOST_Human_SUBTYPE_H1N1_n1:0.0631174,(1918.50_STRAIN_A/SouthCarolina/1/1918_HOST_Human_SUBTYPE_H1N1_n1:0.0153494,((1930.50_STRAIN_A/swine/Iowa/15/1930_HOST_Swine_SUBTYPE_H1N1_n1:0.018544,1931.50_STRAIN_A/swine/USA/1976/1931_HOST_Swine_SUBTYPE_H1N1_n1:0.0280373):0.0229842,((((1966.50_STRAIN_A/swine/Wisconsin/2/1966_HOST_Swine_SUBTYPE_H1N1_n1:0.0216899,1967.50_STRAIN_A/swine/Wisconsin/1/1967_HOST_Swine_SUBTYPE_H1N1_n1:0.0199452):1e-06,(1968.50_STRAIN_A/swine/Wisconsin/1/1968_HOST_Swine_SUBTYPE_H1N1_n1:0.0273074,(((1973.50_STRAIN_A/swine/Iowa/1973_HOST_Swine_SUBTYPE_H1N1_n1:0.0107309,1971.50_STRAIN_A/swine/Wisconsin/1/1971_HOST_Swine_SUBTYPE_H1N1_n1:0.00359083):0.00981019,(1975.50_STRAIN_A/swine/Tennessee/1/1975_HOST_Swine_SUBTYPE_H1N1_n1:0.0413298,((1977.50_STRAIN_A/swine/Tennessee/107/1977_HOST_Swine_SUBTYPE_H1N1_n1:0.060794,(1978.50_STRAIN_A/swine/Tennessee/11/1978_HOST_Swine_SUBTYPE_H1N1_n1:0.061456,1976.50_STRAIN_A/swine/Tennessee/7/1976_HOST_Swine_SUBTYPE_H1N1_n1:0.0105335):0.00921162):1e-06,(2006.50_STRAIN_A/swine/Chonburi/06CB2/2006_HOST_Swine_SUBTYPE_H1N1_n1:0.280814,((1979.50_STRAIN_A/swine/Minnesota/5892-7/1979_HOST_Swine_SUBTYPE_H1N1_n1:0.0130722,(1981.50_STRAIN_A/swine/Ontario/4/1981_HOST_Swine_SUBTYPE_H1N1_n1:0.0187031,((1992.69_STRAIN_A/swine/Taichung/E3/1992_HOST_Swine_SUBTYPE_H1N1_n1:0.0986942,1992.50_STRAIN_A/swine/Nebraska/1/1992_HOST_Swine_SUBTYPE_H1N1_n1:0.120737):0.00203415,(((((2003.50_STRAIN_A/swine/Ratchaburi/NIAH550/2003_HOST_Swine_SUBTYPE_H1N1_n1:0.193533,1988.50_STRAIN_A/swine/Wisconsin/1915/1988_HOST_Swine_SUBTYPE_H1N1_n1:0.0117258):0.00281038,((1991.50_STRAIN_A/swine/Maryland/23239/1991_HOST_Swine_SUBTYPE_H1N1_n1:0.00365424,(1998.50_STRAIN_A/swine/Wisconsin/464/98_HOST_Swine_SUBTYPE_H1N1_n1:0.108857,1997.50_STRAIN_A/Swine/Wisconsin/235/97_HOST_Swine_SUBTYPE_H1N1_n1:0.0311924):0.0405758):0.00165155,(1990.50_STRAIN_A/swine/Memphis/1/1990_HOST_Swine_SUBTYPE_H1N1_n1:1e-06,((1999.50_STRAIN_A/swine/Minnesota/37866/1999_HOST_Swine_SUBTYPE_H1N1_n1:0.0866665,((2009.35_STRAIN_A/swine/Minnesota/02817/2009_HOST_Swine_SUBTYPE_H1N1_n1:0.0459451,2006.85_STRAIN_A/swine/Minnesota/SG1261/2006_HOST_Swine_SUBTYPE_H1N1_n1:0.0183028):0.0760348,(2002.50_STRAIN_A/swine/NorthCarolina/36883/2002_HOST_Swine_SUBTYPE_H1N1_n1:0.0182132,2000.50_STRAIN_A/swine/NorthCarolina/47834/2000_HOST_Swine_SUBTYPE_H1N1_n1:0.0348224):0.0328416):0.0629895):0.00596459,(((((2012.27_STRAIN_A/NewMexico/12/2012_HOST_Human_SUBTYPE_H1N1_n1:0.0231838,((2013.85_STRAIN_A/Mississippi/3489/2013_HOST_Human_SUBTYPE_H1N1_n1:0.0107454,2013.14_STRAIN_A/Helsinki/806/2013_HOST_Human_SUBTYPE_H1N1_n1:0.0035018):0.0125106,2010.97_STRAIN_A/England/05160856/2010_HOST_Human_SUBTYPE_H1N1_n1:1e-06):0.00367207):0.0053551,2011.15_STRAIN_A/swine/Colombo/N73/2011_HOST_Swine_SUBTYPE_H1N1_n1:0.0181661):0.00177921,(2009.40_STRAIN_A/Chile/36/2009_HOST_Human_SUBTYPE_H1N1_n1:1e-06,2009.95_STRAIN_A/swine/Korea/SCJ20/2009_HOST_Swine_SUBTYPE_H1N1_n1:0.0106774):0.00164096):0.133277,((((2013.19_STRAIN_A/swine/Illinois/A01443703/2013_HOST_Swine_SUBTYPE_H1N1_n1:0.00903604,2013.95_STRAIN_A/swine/Illinois/A01409409/2013_HOST_Swine_SUBTYPE_H1N1_n1:0.0162983):0.00172262,2012.39_STRAIN_A/swine/Illinois/A01328686/2012_HOST_Swine_SUBTYPE_H1N1_n1:1e-06):0.0538984,2008.33_STRAIN_A/swine/Illinois/02166/2008_HOST_Swine_SUBTYPE_H1N1_n1:0.0222324):0.0455793,2005.32_STRAIN_A/swine/Minnesota/00574/2005_HOST_Swine_SUBTYPE_H1N1_n1:0.0321618):0.0357029):0.0332763,2004.15_STRAIN_A/swine/Texas/SG1187/2004_HOST_Swine_SUBTYPE_H1N1_n1:0.110197):0.0591151):0.0112803):0.00179958):0.0343095):0.00736674,1987.50_STRAIN_A/swine/Kansas/3024/1987_HOST_Swine_SUBTYPE_H1N1_n1:0.00862542):0.0165836,1985.50_STRAIN_A/swine/Iowa/3/1985_HOST_Swine_SUBTYPE_H1N1_n1:0.00534232):0.00828289,1986.50_STRAIN_A/swine/Iowa/1/1986_HOST_Swine_SUBTYPE_H1N1_n1:0.0224608):0.0220306):0.0357163):0.00510405):0.0085195,1980.50_STRAIN_A/swine/Wisconsin/641/1980_HOST_Swine_SUBTYPE_H1N1_n1:0.0126522):0.0174141):0.0312426):0.0318649):0.013118):0.017173,1970.50_STRAIN_A/swine/Wisconsin/2/1970_HOST_Swine_SUBTYPE_H1N1_n1:0.0109353):0.0277912):0.00350987):0.0207366,1961.50_STRAIN_A/swine/Wisconsin/1/1961_HOST_Swine_SUBTYPE_H1N1_n1:0.00275203):0.0401142,1957.50_STRAIN_A/swine/Wisconsin/1/1957_HOST_Swine_SUBTYPE_H1N1_n1:0.0105121):0.209821):0.16283):0.188724):0.0157352,(1935.50_STRAIN_A/Melbourne/1935_HOST_Human_SUBTYPE_H1N1_n1:0.045774,(1936.50_STRAIN_A/Henry/1936_HOST_Human_SUBTYPE_H1N1_n1:0.013891,1934.50_STRAIN_A/PuertoRico/8-WG/1934_HOST_Human_SUBTYPE_H1N1_n1:0.0492182):0.0318662):0.00467887):0.075457):0.00555459,(1945.50_STRAIN_A/AA/Huston/1945_HOST_Human_SUBTYPE_H1N1_n1:0.0146497,1943.50_STRAIN_A/Weiss/1943_HOST_Human_SUBTYPE_H1N1_n1:0.0200002):0.0278425):0.0741776,((1947.50_STRAIN_A/FortMonmouth/1/1947_HOST_Human_SUBTYPE_H1N1_n1:0.0248033,(1954.50_STRAIN_A/Malaysia/1954_HOST_Human_SUBTYPE_H1N1_n1:0.0762295,(1951.50_STRAIN_A/Netherlands/002P1/1951_HOST_Human_SUBTYPE_H1N1_n1:0.0265548,((1950.50_STRAIN_A/FortWarren/1/1950_HOST_Human_SUBTYPE_H1N1_n1:0.0125567,1957.50_STRAIN_A/Denver/1957_HOST_Human_SUBTYPE_H1N1_n1:0.0555249):0.00189668,1953.50_STRAIN_A/Netherlands/001R1/1953_HOST_Human_SUBTYPE_H1N1_n1:0.00537208):0.0212247):0.0378768):0.0140848):0.0118536,(1946.50_STRAIN_A/Cameron/JY2/1946_HOST_Human_SUBTYPE_H1N1_n1:1e-06,1940.50_STRAIN_A/Hickox/JY2/1940_HOST_Human_SUBTYPE_H1N1_n1:0.00537169):0.0160745):0.0200501):0.0514353):0.00892806,1949.50_STRAIN_A/Roma/1949_HOST_Human_SUBTYPE_H1N1_n1:0.000492194):0.0167985,(1961.50_STRAIN_A/Mongolia/231/85_HOST_Human_SUBTYPE_H1N1_n1:0.0161268,1953.50_STRAIN_A/USSR/90/1977_HOST_Human_SUBTYPE_H1N1_n1:1e-06):0.00780138):0.0144736,1955.50_STRAIN_A/USSR/46/1979_HOST_Human_SUBTYPE_H1N1_n1:0.0118898):0.013405);
+
+2016-02-26 15:44:05,410 - INFO - Using 1 CPUs for the remaining computations.
+
+2016-02-26 15:44:05,410 - INFO - Now optimizing a different omega for each site while keeping branch lengths and other model parameters fixed.
+2016-02-26 15:44:05,411 - INFO - Not using '--omegabysite_fixsyn', so we fit a synonymous rate for each site. This means we compare fitting omega and a synonymous rate to fitting just a synonymous rate.
+2016-02-26 15:44:05,411 - INFO - The tree and branch lengths will be fixed to the values in phydms_output_YNGKP_M8_tree.newick
+2016-02-26 15:44:05,411 - INFO - The remaining model parameters will be to fixed to the following:
+	2_Full.theta1 = 0.542603
+	2_Full.theta2 = 0.515575
+	kappa = 4.9361
+	3_Full.theta = 0.417014
+	1_Full.theta2 = 0.567503
+	1_Full.theta = 0.446235
+	1_Full.theta1 = 0.580188
+	2_Full.theta = 0.432869
+	3_Full.theta1 = 0.568675
+	3_Full.theta2 = 0.515042
+
+2016-02-26 15:44:25,477 - INFO - For site 1, fitting omega to 1.29 increases LnL by 0.04 relative to fixing omega at 1.00 (P-value 0.77). Fitting took 19.5 seconds.
+
+2016-02-26 15:45:29,560 - INFO - For site 2, fitting omega to 999.00 increases LnL by 0.48 relative to fixing omega at 1.00 (P-value 0.33). Fitting took 63.9 seconds.
+
+2016-02-26 15:46:26,641 - INFO - For site 3, fitting omega to 999.00 increases LnL by 1.69 relative to fixing omega at 1.00 (P-value 0.066). Fitting took 57.6 seconds.
+
+2016-02-26 15:46:56,685 - INFO - For site 4, fitting omega to 1.78 increases LnL by 0.20 relative to fixing omega at 1.00 (P-value 0.53). Fitting took 30.2 seconds.
+
+2016-02-26 15:47:30,733 - INFO - For site 5, fitting omega to 0.31 increases LnL by 1.05 relative to fixing omega at 1.00 (P-value 0.15). Fitting took 33.3 seconds.
+
+2016-02-26 15:48:02,779 - INFO - For site 6, fitting omega to 0.83 increases LnL by 0.03 relative to fixing omega at 1.00 (P-value 0.81). Fitting took 32.1 seconds.
+
+2016-02-26 15:48:44,834 - INFO - For site 7, fitting omega to 0.37 increases LnL by 0.47 relative to fixing omega at 1.00 (P-value 0.33). Fitting took 42.7 seconds.
+
+2016-02-26 15:49:23,890 - INFO - For site 8, fitting omega to 0.20 increases LnL by 1.37 relative to fixing omega at 1.00 (P-value 0.097). Fitting took 38.7 seconds.
+
+2016-02-26 15:50:02,946 - INFO - For site 9, fitting omega to 0.10 increases LnL by 4.19 relative to fixing omega at 1.00 (P-value 0.0038). Fitting took 39.0 seconds.
+
+2016-02-26 15:50:59,025 - INFO - For site 10, fitting omega to 999.00 increases LnL by 1.53 relative to fixing omega at 1.00 (P-value 0.08). Fitting took 56.1 seconds.
+
+2016-02-26 15:51:26,074 - INFO - For site 11, fitting omega to 0.56 increases LnL by 0.20 relative to fixing omega at 1.00 (P-value 0.53). Fitting took 26.8 seconds.
+
+2016-02-26 15:51:51,134 - INFO - For site 12, fitting omega to 2.17 increases LnL by 0.31 relative to fixing omega at 1.00 (P-value 0.43). Fitting took 25.3 seconds.
+
+2016-02-26 15:52:19,198 - INFO - For site 13, fitting omega to 0.45 increases LnL by 0.61 relative to fixing omega at 1.00 (P-value 0.27). Fitting took 28.4 seconds.
+
+2016-02-26 15:53:22,313 - INFO - For site 14, fitting omega to 999.00 increases LnL by 0.79 relative to fixing omega at 1.00 (P-value 0.21). Fitting took 62.9 seconds.
+
+2016-02-26 15:53:47,379 - INFO - For site 15, fitting omega to 1.79 increases LnL by 0.16 relative to fixing omega at 1.00 (P-value 0.57). Fitting took 25.3 seconds.
+
+2016-02-26 15:54:25,462 - INFO - For site 16, fitting omega to 0.08 increases LnL by 2.74 relative to fixing omega at 1.00 (P-value 0.019). Fitting took 37.6 seconds.
+
+2016-02-26 15:54:58,539 - INFO - For site 17, fitting omega to 0.00 increases LnL by 1.31 relative to fixing omega at 1.00 (P-value 0.11). Fitting took 32.8 seconds.
+
+2016-02-26 15:55:09,554 - INFO - For site 18, fitting omega to 0.34 increases LnL by 0.00 relative to fixing omega at 1.00 (P-value 1). Fitting took 11.5 seconds.
+
+2016-02-26 15:55:33,601 - INFO - For site 19, fitting omega to 0.28 increases LnL by 0.95 relative to fixing omega at 1.00 (P-value 0.17). Fitting took 23.9 seconds.
+
+2016-02-26 15:55:45,639 - INFO - For site 20, fitting omega to 0.31 increases LnL by 0.00 relative to fixing omega at 1.00 (P-value 1). Fitting took 11.5 seconds.
+
+2016-02-26 15:57:10,789 - INFO - For site 21, fitting omega to 999.00 increases LnL by 0.09 relative to fixing omega at 1.00 (P-value 0.68). Fitting took 85.7 seconds.
+
+2016-02-26 15:57:26,825 - INFO - For site 22, fitting omega to 0.00 increases LnL by 4.84 relative to fixing omega at 1.00 (P-value 0.0019). Fitting took 15.8 seconds.
+
+2016-02-26 15:57:50,871 - INFO - For site 23, fitting omega to 0.00 increases LnL by 8.03 relative to fixing omega at 1.00 (P-value 6.1e-05). Fitting took 24.2 seconds.
+
+2016-02-26 15:58:01,924 - INFO - For site 24, fitting omega to 0.31 increases LnL by 0.00 relative to fixing omega at 1.00 (P-value 1). Fitting took 11.5 seconds.
+
+2016-02-26 15:58:24,973 - INFO - For site 25, fitting omega to 0.00 increases LnL by 8.23 relative to fixing omega at 1.00 (P-value 5e-05). Fitting took 22.6 seconds.
+
+2016-02-26 15:58:56,038 - INFO - For site 26, fitting omega to 0.00 increases LnL by 2.79 relative to fixing omega at 1.00 (P-value 0.018). Fitting took 30.7 seconds.
+
+2016-02-26 15:59:18,067 - INFO - For site 27, fitting omega to 0.00 increases LnL by 10.43 relative to fixing omega at 1.00 (P-value 5e-06). Fitting took 22.7 seconds.
+
+2016-02-26 15:59:43,124 - INFO - For site 28, fitting omega to 0.00 increases LnL by 4.17 relative to fixing omega at 1.00 (P-value 0.0039). Fitting took 24.4 seconds.
+
+2016-02-26 16:00:07,178 - INFO - For site 29, fitting omega to 0.00 increases LnL by 3.31 relative to fixing omega at 1.00 (P-value 0.01). Fitting took 24.3 seconds.
+
+2016-02-26 16:00:40,238 - INFO - For site 30, fitting omega to 0.00 increases LnL by 1.31 relative to fixing omega at 1.00 (P-value 0.11). Fitting took 33.0 seconds.
+
+2016-02-26 16:01:04,277 - INFO - For site 31, fitting omega to 0.00 increases LnL by 3.63 relative to fixing omega at 1.00 (P-value 0.0071). Fitting took 24.2 seconds.
+
+2016-02-26 16:01:34,326 - INFO - For site 32, fitting omega to 0.00 increases LnL by 1.23 relative to fixing omega at 1.00 (P-value 0.12). Fitting took 30.2 seconds.
+
+2016-02-26 16:02:03,369 - INFO - For site 33, fitting omega to 0.00 increases LnL by 2.80 relative to fixing omega at 1.00 (P-value 0.018). Fitting took 29.0 seconds.
+
+2016-02-26 16:02:34,414 - INFO - For site 34, fitting omega to 0.00 increases LnL by 2.89 relative to fixing omega at 1.00 (P-value 0.016). Fitting took 30.7 seconds.
+
+2016-02-26 16:03:30,492 - INFO - For site 35, fitting omega to 999.00 increases LnL by 1.35 relative to fixing omega at 1.00 (P-value 0.1). Fitting took 56.2 seconds.
+
+2016-02-26 16:03:54,529 - INFO - For site 36, fitting omega to 0.00 increases LnL by 6.24 relative to fixing omega at 1.00 (P-value 0.00041). Fitting took 24.2 seconds.
+
+2016-02-26 16:04:14,561 - INFO - For site 37, fitting omega to 0.00 increases LnL by 9.94 relative to fixing omega at 1.00 (P-value 8.2e-06). Fitting took 19.5 seconds.
+
+2016-02-26 16:04:56,621 - INFO - For site 38, fitting omega to 0.76 increases LnL by 0.02 relative to fixing omega at 1.00 (P-value 0.84). Fitting took 42.8 seconds.
+
+2016-02-26 16:05:22,659 - INFO - For site 39, fitting omega to 0.00 increases LnL by 4.42 relative to fixing omega at 1.00 (P-value 0.0029). Fitting took 25.8 seconds.
+
+2016-02-26 16:05:53,706 - INFO - For site 40, fitting omega to 0.10 increases LnL by 2.79 relative to fixing omega at 1.00 (P-value 0.018). Fitting took 30.6 seconds.
+
+2016-02-26 16:06:24,751 - INFO - For site 41, fitting omega to 0.00 increases LnL by 4.22 relative to fixing omega at 1.00 (P-value 0.0037). Fitting took 31.4 seconds.
+
+2016-02-26 16:06:57,795 - INFO - For site 42, fitting omega to 0.00 increases LnL by 1.19 relative to fixing omega at 1.00 (P-value 0.12). Fitting took 32.8 seconds.
+
+2016-02-26 16:07:08,810 - INFO - For site 43, fitting omega to 0.34 increases LnL by 0.00 relative to fixing omega at 1.00 (P-value 1). Fitting took 11.4 seconds.
+
+2016-02-26 16:07:31,845 - INFO - For site 44, fitting omega to 0.00 increases LnL by 4.24 relative to fixing omega at 1.00 (P-value 0.0036). Fitting took 22.6 seconds.
+
+2016-02-26 16:07:58,886 - INFO - For site 45, fitting omega to 0.00 increases LnL by 1.22 relative to fixing omega at 1.00 (P-value 0.12). Fitting took 27.1 seconds.
+
+2016-02-26 16:08:22,922 - INFO - For site 46, fitting omega to 0.00 increases LnL by 3.50 relative to fixing omega at 1.00 (P-value 0.0082). Fitting took 24.2 seconds.
+
+2016-02-26 16:08:51,966 - INFO - For site 47, fitting omega to 0.00 increases LnL by 3.67 relative to fixing omega at 1.00 (P-value 0.0067). Fitting took 28.8 seconds.
+
+2016-02-26 16:09:13,999 - INFO - For site 48, fitting omega to 0.00 increases LnL by 3.23 relative to fixing omega at 1.00 (P-value 0.011). Fitting took 22.2 seconds.
+
+2016-02-26 16:09:36,034 - INFO - For site 49, fitting omega to 0.00 increases LnL by 5.02 relative to fixing omega at 1.00 (P-value 0.0015). Fitting took 22.7 seconds.
+
+2016-02-26 16:10:13,088 - INFO - For site 50, fitting omega to 0.00 increases LnL by 1.55 relative to fixing omega at 1.00 (P-value 0.078). Fitting took 36.3 seconds.
+
+2016-02-26 16:11:10,168 - INFO - For site 51, fitting omega to 999.00 increases LnL by 1.93 relative to fixing omega at 1.00 (P-value 0.05). Fitting took 57.7 seconds.
+
+2016-02-26 16:11:37,209 - INFO - For site 52, fitting omega to 0.42 increases LnL by 0.59 relative to fixing omega at 1.00 (P-value 0.28). Fitting took 27.0 seconds.
+
+2016-02-26 16:12:05,251 - INFO - For site 53, fitting omega to 0.00 increases LnL by 3.10 relative to fixing omega at 1.00 (P-value 0.013). Fitting took 27.7 seconds.
+
+2016-02-26 16:12:46,310 - INFO - For site 54, fitting omega to 0.06 increases LnL by 5.13 relative to fixing omega at 1.00 (P-value 0.0014). Fitting took 41.5 seconds.
+
+2016-02-26 16:13:11,347 - INFO - For site 55, fitting omega to 0.00 increases LnL by 12.62 relative to fixing omega at 1.00 (P-value 5.1e-07). Fitting took 24.2 seconds.
+
+2016-02-26 16:13:50,406 - INFO - For site 56, fitting omega to 0.00 increases LnL by 1.46 relative to fixing omega at 1.00 (P-value 0.087). Fitting took 39.1 seconds.
+
+2016-02-26 16:14:17,499 - INFO - For site 57, fitting omega to 0.00 increases LnL by 3.61 relative to fixing omega at 1.00 (P-value 0.0072). Fitting took 27.0 seconds.
+
+2016-02-26 16:14:36,554 - INFO - For site 58, fitting omega to 0.00 increases LnL by 6.54 relative to fixing omega at 1.00 (P-value 0.0003). Fitting took 19.5 seconds.
+
+2016-02-26 16:15:01,592 - INFO - For site 59, fitting omega to 2.23 increases LnL by 0.31 relative to fixing omega at 1.00 (P-value 0.43). Fitting took 25.4 seconds.
+
+2016-02-26 16:15:28,631 - INFO - For site 60, fitting omega to 0.00 increases LnL by 3.72 relative to fixing omega at 1.00 (P-value 0.0064). Fitting took 26.7 seconds.
+
+2016-02-26 16:15:56,672 - INFO - For site 61, fitting omega to 0.60 increases LnL by 0.29 relative to fixing omega at 1.00 (P-value 0.44). Fitting took 28.4 seconds.
+
+2016-02-26 16:16:19,708 - INFO - For site 62, fitting omega to 0.00 increases LnL by 9.52 relative to fixing omega at 1.00 (P-value 1.3e-05). Fitting took 22.6 seconds.
+
+2016-02-26 16:16:50,753 - INFO - For site 63, fitting omega to 0.61 increases LnL by 0.12 relative to fixing omega at 1.00 (P-value 0.62). Fitting took 30.8 seconds.
+
+2016-02-26 16:17:08,778 - INFO - For site 64, fitting omega to 0.00 increases LnL by 4.37 relative to fixing omega at 1.00 (P-value 0.0031). Fitting took 18.5 seconds.
+
+2016-02-26 16:17:19,797 - INFO - For site 65, fitting omega to 0.31 increases LnL by 0.00 relative to fixing omega at 1.00 (P-value 1). Fitting took 11.4 seconds.
+
+2016-02-26 16:17:46,837 - INFO - For site 66, fitting omega to 0.00 increases LnL by 3.46 relative to fixing omega at 1.00 (P-value 0.0086). Fitting took 26.7 seconds.
+
+2016-02-26 16:18:13,885 - INFO - For site 67, fitting omega to 0.27 increases LnL by 0.80 relative to fixing omega at 1.00 (P-value 0.21). Fitting took 26.5 seconds.
+
+2016-02-26 16:18:40,926 - INFO - For site 68, fitting omega to 0.00 increases LnL by 4.33 relative to fixing omega at 1.00 (P-value 0.0032). Fitting took 27.0 seconds.
+
+2016-02-26 16:19:09,969 - INFO - For site 69, fitting omega to 0.21 increases LnL by 0.87 relative to fixing omega at 1.00 (P-value 0.19). Fitting took 29.8 seconds.
+
+2016-02-26 16:19:37,010 - INFO - For site 70, fitting omega to 0.59 increases LnL by 0.09 relative to fixing omega at 1.00 (P-value 0.68). Fitting took 27.2 seconds.
+
+2016-02-26 16:20:03,049 - INFO - For site 71, fitting omega to 0.00 increases LnL by 4.89 relative to fixing omega at 1.00 (P-value 0.0018). Fitting took 25.3 seconds.
+
+2016-02-26 16:20:29,089 - INFO - For site 72, fitting omega to 0.20 increases LnL by 1.85 relative to fixing omega at 1.00 (P-value 0.055). Fitting took 26.5 seconds.
+
+2016-02-26 16:20:51,123 - INFO - For site 73, fitting omega to 0.45 increases LnL by 0.31 relative to fixing omega at 1.00 (P-value 0.43). Fitting took 21.3 seconds.
+
+2016-02-26 16:21:10,154 - INFO - For site 74, fitting omega to 0.00 increases LnL by 3.61 relative to fixing omega at 1.00 (P-value 0.0072). Fitting took 19.9 seconds.
+
+2016-02-26 16:21:36,193 - INFO - For site 75, fitting omega to 0.00 increases LnL by 4.79 relative to fixing omega at 1.00 (P-value 0.002). Fitting took 25.9 seconds.
+
+2016-02-26 16:21:48,214 - INFO - For site 76, fitting omega to 0.30 increases LnL by 0.00 relative to fixing omega at 1.00 (P-value 1). Fitting took 11.4 seconds.
+
+2016-02-26 16:22:23,267 - INFO - For site 77, fitting omega to 0.47 increases LnL by 0.86 relative to fixing omega at 1.00 (P-value 0.19). Fitting took 35.3 seconds.
+
+2016-02-26 16:22:49,306 - INFO - For site 78, fitting omega to 0.00 increases LnL by 4.09 relative to fixing omega at 1.00 (P-value 0.0042). Fitting took 25.6 seconds.
+
+2016-02-26 16:23:19,350 - INFO - For site 79, fitting omega to 0.00 increases LnL by 3.56 relative to fixing omega at 1.00 (P-value 0.0077). Fitting took 30.7 seconds.
+
+2016-02-26 16:23:42,385 - INFO - For site 80, fitting omega to 0.00 increases LnL by 5.01 relative to fixing omega at 1.00 (P-value 0.0015). Fitting took 22.6 seconds.
+
+2016-02-26 16:24:09,425 - INFO - For site 81, fitting omega to 0.00 increases LnL by 3.85 relative to fixing omega at 1.00 (P-value 0.0055). Fitting took 27.5 seconds.
+
+2016-02-26 16:24:47,480 - INFO - For site 82, fitting omega to 0.09 increases LnL by 2.47 relative to fixing omega at 1.00 (P-value 0.026). Fitting took 38.1 seconds.
+
+2016-02-26 16:25:13,519 - INFO - For site 83, fitting omega to 0.00 increases LnL by 3.00 relative to fixing omega at 1.00 (P-value 0.014). Fitting took 26.0 seconds.
+
+2016-02-26 16:25:46,568 - INFO - For site 84, fitting omega to 0.66 increases LnL by 0.06 relative to fixing omega at 1.00 (P-value 0.73). Fitting took 32.6 seconds.
+
+2016-02-26 16:26:16,613 - INFO - For site 85, fitting omega to 1.80 increases LnL by 0.32 relative to fixing omega at 1.00 (P-value 0.43). Fitting took 29.7 seconds.
+
+2016-02-26 16:27:15,701 - INFO - For site 86, fitting omega to 0.15 increases LnL by 2.35 relative to fixing omega at 1.00 (P-value 0.03). Fitting took 59.2 seconds.
+
+2016-02-26 16:27:43,748 - INFO - For site 87, fitting omega to 0.82 increases LnL by 0.05 relative to fixing omega at 1.00 (P-value 0.75). Fitting took 28.6 seconds.
+
+2016-02-26 16:28:10,789 - INFO - For site 88, fitting omega to 0.54 increases LnL by 0.32 relative to fixing omega at 1.00 (P-value 0.42). Fitting took 26.7 seconds.
+
+2016-02-26 16:28:40,833 - INFO - For site 89, fitting omega to 3.26 increases LnL by 0.82 relative to fixing omega at 1.00 (P-value 0.2). Fitting took 29.7 seconds.
+
+2016-02-26 16:29:02,866 - INFO - For site 90, fitting omega to 0.89 increases LnL by 0.01 relative to fixing omega at 1.00 (P-value 0.89). Fitting took 22.6 seconds.
+
+2016-02-26 16:29:27,904 - INFO - For site 91, fitting omega to 0.00 increases LnL by 2.79 relative to fixing omega at 1.00 (P-value 0.018). Fitting took 24.8 seconds.
+
+2016-02-26 16:29:38,923 - INFO - For site 92, fitting omega to 0.30 increases LnL by 0.00 relative to fixing omega at 1.00 (P-value 1). Fitting took 11.4 seconds.
+
+2016-02-26 16:29:57,953 - INFO - For site 93, fitting omega to 0.00 increases LnL by 4.53 relative to fixing omega at 1.00 (P-value 0.0026). Fitting took 18.4 seconds.
+
+2016-02-26 16:30:37,009 - INFO - For site 94, fitting omega to 0.00 increases LnL by 3.00 relative to fixing omega at 1.00 (P-value 0.014). Fitting took 39.7 seconds.
+
+2016-02-26 16:31:16,011 - INFO - For site 95, fitting omega to 0.20 increases LnL by 0.92 relative to fixing omega at 1.00 (P-value 0.17). Fitting took 39.1 seconds.
+
+2016-02-26 16:31:41,049 - INFO - For site 96, fitting omega to 0.30 increases LnL by 0.86 relative to fixing omega at 1.00 (P-value 0.19). Fitting took 24.9 seconds.
+
+2016-02-26 16:32:09,091 - INFO - For site 97, fitting omega to 0.00 increases LnL by 5.07 relative to fixing omega at 1.00 (P-value 0.0015). Fitting took 27.6 seconds.
+
+2016-02-26 16:32:37,133 - INFO - For site 98, fitting omega to 0.21 increases LnL by 1.45 relative to fixing omega at 1.00 (P-value 0.089). Fitting took 28.3 seconds.
+
+2016-02-26 16:33:01,171 - INFO - For site 99, fitting omega to 0.40 increases LnL by 0.60 relative to fixing omega at 1.00 (P-value 0.27). Fitting took 24.0 seconds.
+
+2016-02-26 16:33:26,208 - INFO - For site 100, fitting omega to 0.38 increases LnL by 0.67 relative to fixing omega at 1.00 (P-value 0.25). Fitting took 25.1 seconds.
+
+2016-02-26 16:34:00,265 - INFO - For site 101, fitting omega to 0.13 increases LnL by 3.27 relative to fixing omega at 1.00 (P-value 0.011). Fitting took 33.7 seconds.
+
+2016-02-26 16:34:25,303 - INFO - For site 102, fitting omega to 0.72 increases LnL by 0.09 relative to fixing omega at 1.00 (P-value 0.66). Fitting took 25.4 seconds.
+
+2016-02-26 16:34:37,328 - INFO - For site 103, fitting omega to 0.34 increases LnL by 0.00 relative to fixing omega at 1.00 (P-value 1). Fitting took 11.4 seconds.
+
+2016-02-26 16:34:55,357 - INFO - For site 104, fitting omega to 0.00 increases LnL by 6.28 relative to fixing omega at 1.00 (P-value 0.00039). Fitting took 18.4 seconds.
+
+2016-02-26 16:35:22,397 - INFO - For site 105, fitting omega to 0.53 increases LnL by 0.34 relative to fixing omega at 1.00 (P-value 0.41). Fitting took 26.8 seconds.
+
+2016-02-26 16:35:56,446 - INFO - For site 106, fitting omega to 0.00 increases LnL by 1.67 relative to fixing omega at 1.00 (P-value 0.068). Fitting took 34.1 seconds.
+
+2016-02-26 16:36:16,477 - INFO - For site 107, fitting omega to 0.00 increases LnL by 2.90 relative to fixing omega at 1.00 (P-value 0.016). Fitting took 20.0 seconds.
+
+2016-02-26 16:36:50,526 - INFO - For site 108, fitting omega to 0.00 increases LnL by 1.65 relative to fixing omega at 1.00 (P-value 0.069). Fitting took 33.9 seconds.
+
+2016-02-26 16:37:11,558 - INFO - For site 109, fitting omega to 0.00 increases LnL by 9.13 relative to fixing omega at 1.00 (P-value 1.9e-05). Fitting took 21.2 seconds.
+
+2016-02-26 16:37:38,600 - INFO - For site 110, fitting omega to 0.81 increases LnL by 0.02 relative to fixing omega at 1.00 (P-value 0.86). Fitting took 26.9 seconds.
+
+2016-02-26 16:38:08,649 - INFO - For site 111, fitting omega to 0.00 increases LnL by 2.62 relative to fixing omega at 1.00 (P-value 0.022). Fitting took 30.1 seconds.
+
+2016-02-26 16:38:37,691 - INFO - For site 112, fitting omega to 1.06 increases LnL by 0.00 relative to fixing omega at 1.00 (P-value 0.94). Fitting took 29.8 seconds.
+
+2016-02-26 16:39:00,725 - INFO - For site 113, fitting omega to 1.01 increases LnL by 0.00 relative to fixing omega at 1.00 (P-value 0.99). Fitting took 22.6 seconds.
+
+2016-02-26 16:39:11,745 - INFO - For site 114, fitting omega to 1.11 increases LnL by -0.00 relative to fixing omega at 1.00 (P-value 1). Fitting took 11.5 seconds.
+
+2016-02-26 16:39:31,776 - INFO - For site 115, fitting omega to 0.00 increases LnL by 8.49 relative to fixing omega at 1.00 (P-value 3.8e-05). Fitting took 19.5 seconds.
+
+2016-02-26 16:39:54,811 - INFO - For site 116, fitting omega to 0.00 increases LnL by 6.70 relative to fixing omega at 1.00 (P-value 0.00025). Fitting took 22.7 seconds.
+
+2016-02-26 16:40:19,850 - INFO - For site 117, fitting omega to 0.00 increases LnL by 1.98 relative to fixing omega at 1.00 (P-value 0.047). Fitting took 25.1 seconds.
+
+2016-02-26 16:40:52,899 - INFO - For site 118, fitting omega to 0.11 increases LnL by 2.24 relative to fixing omega at 1.00 (P-value 0.034). Fitting took 33.8 seconds.
+
+2016-02-26 16:41:14,933 - INFO - For site 119, fitting omega to 0.00 increases LnL by 4.19 relative to fixing omega at 1.00 (P-value 0.0038). Fitting took 21.9 seconds.
+
+2016-02-26 16:41:46,981 - INFO - For site 120, fitting omega to 0.11 increases LnL by 2.61 relative to fixing omega at 1.00 (P-value 0.022). Fitting took 32.1 seconds.
+
+2016-02-26 16:42:14,021 - INFO - For site 121, fitting omega to 0.00 increases LnL by 2.95 relative to fixing omega at 1.00 (P-value 0.015). Fitting took 26.7 seconds.
+
+2016-02-26 16:42:45,072 - INFO - For site 122, fitting omega to 0.16 increases LnL by 1.15 relative to fixing omega at 1.00 (P-value 0.13). Fitting took 31.0 seconds.
+
+2016-02-26 16:43:16,117 - INFO - For site 123, fitting omega to 0.16 increases LnL by 1.17 relative to fixing omega at 1.00 (P-value 0.13). Fitting took 31.1 seconds.
+
+2016-02-26 16:43:42,152 - INFO - For site 124, fitting omega to 0.12 increases LnL by 2.35 relative to fixing omega at 1.00 (P-value 0.03). Fitting took 26.2 seconds.
+
+2016-02-26 16:44:08,191 - INFO - For site 125, fitting omega to 0.67 increases LnL by 0.05 relative to fixing omega at 1.00 (P-value 0.76). Fitting took 25.6 seconds.
+
+2016-02-26 16:44:34,230 - INFO - For site 126, fitting omega to 0.00 increases LnL by 3.32 relative to fixing omega at 1.00 (P-value 0.0099). Fitting took 26.1 seconds.
+
+2016-02-26 16:45:10,282 - INFO - For site 127, fitting omega to 0.08 increases LnL by 2.86 relative to fixing omega at 1.00 (P-value 0.017). Fitting took 36.0 seconds.
+
+2016-02-26 16:45:45,335 - INFO - For site 128, fitting omega to 0.00 increases LnL by 2.99 relative to fixing omega at 1.00 (P-value 0.014). Fitting took 34.9 seconds.
+
+2016-02-26 16:46:25,395 - INFO - For site 129, fitting omega to 0.21 increases LnL by 2.61 relative to fixing omega at 1.00 (P-value 0.022). Fitting took 40.5 seconds.
+
+2016-02-26 16:46:48,430 - INFO - For site 130, fitting omega to 0.00 increases LnL by 2.84 relative to fixing omega at 1.00 (P-value 0.017). Fitting took 23.2 seconds.
+
+2016-02-26 16:47:08,462 - INFO - For site 131, fitting omega to 0.00 increases LnL by 6.50 relative to fixing omega at 1.00 (P-value 0.00031). Fitting took 20.1 seconds.
+
+2016-02-26 16:48:35,582 - INFO - For site 132, fitting omega to 999.00 increases LnL by 0.09 relative to fixing omega at 1.00 (P-value 0.68). Fitting took 86.6 seconds.
+
+2016-02-26 16:48:52,609 - INFO - For site 133, fitting omega to 0.00 increases LnL by 5.56 relative to fixing omega at 1.00 (P-value 0.00086). Fitting took 16.9 seconds.
+
+2016-02-26 16:49:03,629 - INFO - For site 134, fitting omega to 1.72 increases LnL by 0.00 relative to fixing omega at 1.00 (P-value 1). Fitting took 11.4 seconds.
+
+2016-02-26 16:49:36,674 - INFO - For site 135, fitting omega to 0.12 increases LnL by 2.49 relative to fixing omega at 1.00 (P-value 0.026). Fitting took 33.3 seconds.
+
+2016-02-26 16:50:03,715 - INFO - For site 136, fitting omega to 0.62 increases LnL by 0.21 relative to fixing omega at 1.00 (P-value 0.52). Fitting took 27.0 seconds.
+
+2016-02-26 16:50:42,771 - INFO - For site 137, fitting omega to 0.25 increases LnL by 2.56 relative to fixing omega at 1.00 (P-value 0.024). Fitting took 39.1 seconds.
+
+2016-02-26 16:51:02,803 - INFO - For site 138, fitting omega to 0.00 increases LnL by 6.29 relative to fixing omega at 1.00 (P-value 0.00039). Fitting took 19.9 seconds.
+
+2016-02-26 16:51:14,828 - INFO - For site 139, fitting omega to 0.30 increases LnL by 0.00 relative to fixing omega at 1.00 (P-value 1). Fitting took 11.5 seconds.
+
+2016-02-26 16:51:44,869 - INFO - For site 140, fitting omega to 0.00 increases LnL by 1.11 relative to fixing omega at 1.00 (P-value 0.14). Fitting took 30.7 seconds.
+
+2016-02-26 16:52:15,921 - INFO - For site 141, fitting omega to 0.35 increases LnL by 1.31 relative to fixing omega at 1.00 (P-value 0.11). Fitting took 31.1 seconds.
+
+2016-02-26 16:52:43,958 - INFO - For site 142, fitting omega to 0.25 increases LnL by 0.44 relative to fixing omega at 1.00 (P-value 0.35). Fitting took 28.0 seconds.
+
+2016-02-26 16:53:17,007 - INFO - For site 143, fitting omega to 2.92 increases LnL by 1.10 relative to fixing omega at 1.00 (P-value 0.14). Fitting took 32.9 seconds.
+
+2016-02-26 16:53:57,065 - INFO - For site 144, fitting omega to 0.59 increases LnL by 0.60 relative to fixing omega at 1.00 (P-value 0.28). Fitting took 39.8 seconds.
+
+2016-02-26 16:54:31,122 - INFO - For site 145, fitting omega to 4.56 increases LnL by 1.69 relative to fixing omega at 1.00 (P-value 0.066). Fitting took 34.0 seconds.
+
+2016-02-26 16:54:57,162 - INFO - For site 146, fitting omega to 0.00 increases LnL by 4.36 relative to fixing omega at 1.00 (P-value 0.0032). Fitting took 26.1 seconds.
+
+2016-02-26 16:55:24,202 - INFO - For site 147, fitting omega to 0.00 increases LnL by 14.91 relative to fixing omega at 1.00 (P-value 4.7e-08). Fitting took 27.1 seconds.
+
+2016-02-26 16:56:08,268 - INFO - For site 148, fitting omega to 0.10 increases LnL by 3.50 relative to fixing omega at 1.00 (P-value 0.0082). Fitting took 44.3 seconds.
+
+2016-02-26 16:56:35,308 - INFO - For site 149, fitting omega to 1.07 increases LnL by 0.00 relative to fixing omega at 1.00 (P-value 0.93). Fitting took 27.0 seconds.
+
+2016-02-26 16:56:52,336 - INFO - For site 150, fitting omega to 1.08 increases LnL by 0.00 relative to fixing omega at 1.00 (P-value 0.95). Fitting took 16.9 seconds.
+
+2016-02-26 16:57:13,369 - INFO - For site 151, fitting omega to 0.00 increases LnL by 5.73 relative to fixing omega at 1.00 (P-value 0.00071). Fitting took 21.1 seconds.
+
+2016-02-26 16:57:41,412 - INFO - For site 152, fitting omega to 0.60 increases LnL by 0.22 relative to fixing omega at 1.00 (P-value 0.51). Fitting took 28.3 seconds.
+
+2016-02-26 16:58:08,453 - INFO - For site 153, fitting omega to 0.73 increases LnL by 0.06 relative to fixing omega at 1.00 (P-value 0.72). Fitting took 27.0 seconds.
+
+2016-02-26 16:58:35,493 - INFO - For site 154, fitting omega to 0.74 increases LnL by 0.11 relative to fixing omega at 1.00 (P-value 0.64). Fitting took 27.1 seconds.
+
+2016-02-26 16:59:08,542 - INFO - For site 155, fitting omega to 0.25 increases LnL by 2.05 relative to fixing omega at 1.00 (P-value 0.043). Fitting took 32.4 seconds.
+
+2016-02-26 16:59:34,578 - INFO - For site 156, fitting omega to 2.41 increases LnL by 0.43 relative to fixing omega at 1.00 (P-value 0.36). Fitting took 26.9 seconds.
+
+2016-02-26 16:59:59,617 - INFO - For site 157, fitting omega to 1.19 increases LnL by 0.02 relative to fixing omega at 1.00 (P-value 0.83). Fitting took 24.3 seconds.
+
+2016-02-26 17:00:30,668 - INFO - For site 158, fitting omega to 0.50 increases LnL by 0.40 relative to fixing omega at 1.00 (P-value 0.37). Fitting took 31.2 seconds.
+
+2016-02-26 17:01:11,723 - INFO - For site 159, fitting omega to 0.05 increases LnL by 5.06 relative to fixing omega at 1.00 (P-value 0.0015). Fitting took 41.6 seconds.
+
+2016-02-26 17:02:23,825 - INFO - For site 160, fitting omega to 27.35 increases LnL by 0.39 relative to fixing omega at 1.00 (P-value 0.38). Fitting took 71.4 seconds.
+
+2016-02-26 17:02:48,863 - INFO - For site 161, fitting omega to 0.50 increases LnL by 0.28 relative to fixing omega at 1.00 (P-value 0.45). Fitting took 25.2 seconds.
+
+2016-02-26 17:03:24,916 - INFO - For site 162, fitting omega to 0.09 increases LnL by 2.64 relative to fixing omega at 1.00 (P-value 0.022). Fitting took 36.5 seconds.
+
+2016-02-26 17:03:47,951 - INFO - For site 163, fitting omega to 0.00 increases LnL by 2.88 relative to fixing omega at 1.00 (P-value 0.016). Fitting took 22.5 seconds.
+
+2016-02-26 17:04:14,993 - INFO - For site 164, fitting omega to 0.52 increases LnL by 0.27 relative to fixing omega at 1.00 (P-value 0.46). Fitting took 26.8 seconds.
+
+2016-02-26 17:06:33,192 - INFO - For site 165, fitting omega to 508.63 increases LnL by 0.01 relative to fixing omega at 1.00 (P-value 0.87). Fitting took 138.9 seconds.
+
+2016-02-26 17:07:29,272 - INFO - For site 166, fitting omega to 0.35 increases LnL by 1.04 relative to fixing omega at 1.00 (P-value 0.15). Fitting took 55.5 seconds.
+
+2016-02-26 17:08:04,323 - INFO - For site 167, fitting omega to 0.14 increases LnL by 4.93 relative to fixing omega at 1.00 (P-value 0.0017). Fitting took 35.5 seconds.
+
+2016-02-26 17:08:24,354 - INFO - For site 168, fitting omega to 1.30 increases LnL by 0.05 relative to fixing omega at 1.00 (P-value 0.75). Fitting took 20.0 seconds.
+
+2016-02-26 17:08:58,404 - INFO - For site 169, fitting omega to 0.13 increases LnL by 5.19 relative to fixing omega at 1.00 (P-value 0.0013). Fitting took 33.9 seconds.
+
+2016-02-26 17:09:28,447 - INFO - For site 170, fitting omega to 0.86 increases LnL by 0.02 relative to fixing omega at 1.00 (P-value 0.83). Fitting took 29.9 seconds.
+
+2016-02-26 17:09:59,493 - INFO - For site 171, fitting omega to 0.49 increases LnL by 0.68 relative to fixing omega at 1.00 (P-value 0.24). Fitting took 31.0 seconds.
+
+2016-02-26 17:10:23,529 - INFO - For site 172, fitting omega to 0.86 increases LnL by 0.01 relative to fixing omega at 1.00 (P-value 0.9). Fitting took 24.3 seconds.
+
+2016-02-26 17:10:46,565 - INFO - For site 173, fitting omega to 0.00 increases LnL by 5.17 relative to fixing omega at 1.00 (P-value 0.0013). Fitting took 22.7 seconds.
+
+2016-02-26 17:11:13,606 - INFO - For site 174, fitting omega to 0.00 increases LnL by 3.29 relative to fixing omega at 1.00 (P-value 0.01). Fitting took 27.7 seconds.
+
+2016-02-26 17:11:40,647 - INFO - For site 175, fitting omega to 0.90 increases LnL by 0.01 relative to fixing omega at 1.00 (P-value 0.87). Fitting took 27.1 seconds.
+
+2016-02-26 17:12:12,694 - INFO - For site 176, fitting omega to 0.28 increases LnL by 0.70 relative to fixing omega at 1.00 (P-value 0.24). Fitting took 31.9 seconds.
+
+2016-02-26 17:12:39,731 - INFO - For site 177, fitting omega to 1.52 increases LnL by 0.15 relative to fixing omega at 1.00 (P-value 0.58). Fitting took 27.0 seconds.
+
+2016-02-26 17:13:03,767 - INFO - For site 178, fitting omega to 1.26 increases LnL by 0.06 relative to fixing omega at 1.00 (P-value 0.73). Fitting took 24.3 seconds.
+
+2016-02-26 17:13:23,799 - INFO - For site 179, fitting omega to 0.00 increases LnL by 5.08 relative to fixing omega at 1.00 (P-value 0.0014). Fitting took 19.9 seconds.
+
+2016-02-26 17:13:46,835 - INFO - For site 180, fitting omega to 0.00 increases LnL by 2.56 relative to fixing omega at 1.00 (P-value 0.024). Fitting took 23.2 seconds.
+
+2016-02-26 17:14:15,878 - INFO - For site 181, fitting omega to 0.22 increases LnL by 1.64 relative to fixing omega at 1.00 (P-value 0.07). Fitting took 28.1 seconds.
+
+2016-02-26 17:14:35,909 - INFO - For site 182, fitting omega to 0.00 increases LnL by 4.86 relative to fixing omega at 1.00 (P-value 0.0018). Fitting took 20.1 seconds.
+
+2016-02-26 17:15:08,957 - INFO - For site 183, fitting omega to 0.28 increases LnL by 2.05 relative to fixing omega at 1.00 (P-value 0.043). Fitting took 33.7 seconds.
+
+2016-02-26 17:15:40,999 - INFO - For site 184, fitting omega to 0.10 increases LnL by 4.82 relative to fixing omega at 1.00 (P-value 0.0019). Fitting took 32.3 seconds.
+
+2016-02-26 17:16:15,045 - INFO - For site 185, fitting omega to 1.65 increases LnL by 0.37 relative to fixing omega at 1.00 (P-value 0.39). Fitting took 33.9 seconds.
+
+2016-02-26 17:16:48,093 - INFO - For site 186, fitting omega to 0.00 increases LnL by 2.24 relative to fixing omega at 1.00 (P-value 0.034). Fitting took 32.6 seconds.
+
+2016-02-26 17:18:05,197 - INFO - For site 187, fitting omega to 999.00 increases LnL by 0.21 relative to fixing omega at 1.00 (P-value 0.51). Fitting took 76.7 seconds.
+
+2016-02-26 17:18:32,235 - INFO - For site 188, fitting omega to 0.00 increases LnL by 1.95 relative to fixing omega at 1.00 (P-value 0.048). Fitting took 27.6 seconds.
+
+2016-02-26 17:19:01,277 - INFO - For site 189, fitting omega to 0.00 increases LnL by 2.34 relative to fixing omega at 1.00 (P-value 0.031). Fitting took 29.0 seconds.
+
+2016-02-26 17:19:21,308 - INFO - For site 190, fitting omega to 0.00 increases LnL by 9.21 relative to fixing omega at 1.00 (P-value 1.8e-05). Fitting took 20.0 seconds.
+
+2016-02-26 17:19:55,358 - INFO - For site 191, fitting omega to 0.28 increases LnL by 0.77 relative to fixing omega at 1.00 (P-value 0.21). Fitting took 34.3 seconds.
+
+2016-02-26 17:20:07,379 - INFO - For site 192, fitting omega to 0.30 increases LnL by 0.00 relative to fixing omega at 1.00 (P-value 1). Fitting took 11.4 seconds.
+
+2016-02-26 17:20:34,422 - INFO - For site 193, fitting omega to 0.22 increases LnL by 0.84 relative to fixing omega at 1.00 (P-value 0.2). Fitting took 27.0 seconds.
+
+2016-02-26 17:20:54,454 - INFO - For site 194, fitting omega to 0.86 increases LnL by 0.01 relative to fixing omega at 1.00 (P-value 0.86). Fitting took 20.0 seconds.
+
+2016-02-26 17:21:21,495 - INFO - For site 195, fitting omega to 0.00 increases LnL by 4.67 relative to fixing omega at 1.00 (P-value 0.0022). Fitting took 27.0 seconds.
+
+2016-02-26 17:21:48,536 - INFO - For site 196, fitting omega to 0.00 increases LnL by 3.22 relative to fixing omega at 1.00 (P-value 0.011). Fitting took 27.6 seconds.
+
+2016-02-26 17:22:11,589 - INFO - For site 197, fitting omega to 0.00 increases LnL by 2.69 relative to fixing omega at 1.00 (P-value 0.02). Fitting took 23.4 seconds.
+
+2016-02-26 17:22:48,644 - INFO - For site 198, fitting omega to 0.26 increases LnL by 2.54 relative to fixing omega at 1.00 (P-value 0.024). Fitting took 36.7 seconds.
+
+2016-02-26 17:23:09,677 - INFO - For site 199, fitting omega to 0.82 increases LnL by 0.02 relative to fixing omega at 1.00 (P-value 0.83). Fitting took 21.1 seconds.
+
+2016-02-26 17:23:41,733 - INFO - For site 200, fitting omega to 1.09 increases LnL by 0.00 relative to fixing omega at 1.00 (P-value 0.93). Fitting took 32.4 seconds.
+
+2016-02-26 17:24:13,782 - INFO - For site 201, fitting omega to 1.53 increases LnL by 0.27 relative to fixing omega at 1.00 (P-value 0.46). Fitting took 31.2 seconds.
+
+2016-02-26 17:24:44,824 - INFO - For site 202, fitting omega to 0.62 increases LnL by 0.27 relative to fixing omega at 1.00 (P-value 0.46). Fitting took 31.4 seconds.
+
+2016-02-26 17:25:20,873 - INFO - For site 203, fitting omega to 0.00 increases LnL by 1.38 relative to fixing omega at 1.00 (P-value 0.096). Fitting took 36.3 seconds.
+
+2016-02-26 17:25:47,914 - INFO - For site 204, fitting omega to 0.79 increases LnL by 0.05 relative to fixing omega at 1.00 (P-value 0.75). Fitting took 27.0 seconds.
+
+2016-02-26 17:26:16,957 - INFO - For site 205, fitting omega to 0.68 increases LnL by 0.18 relative to fixing omega at 1.00 (P-value 0.55). Fitting took 28.7 seconds.
+
+2016-02-26 17:26:41,996 - INFO - For site 206, fitting omega to 0.91 increases LnL by 0.01 relative to fixing omega at 1.00 (P-value 0.91). Fitting took 25.4 seconds.
+
+2016-02-26 17:27:02,027 - INFO - For site 207, fitting omega to 0.00 increases LnL by 6.90 relative to fixing omega at 1.00 (P-value 0.0002). Fitting took 20.0 seconds.
+
+2016-02-26 17:27:35,080 - INFO - For site 208, fitting omega to 0.26 increases LnL by 1.92 relative to fixing omega at 1.00 (P-value 0.05). Fitting took 32.4 seconds.
+
+2016-02-26 17:28:02,117 - INFO - For site 209, fitting omega to 0.90 increases LnL by 0.00 relative to fixing omega at 1.00 (P-value 0.93). Fitting took 27.0 seconds.
+
+2016-02-26 17:28:24,152 - INFO - For site 210, fitting omega to 1.25 increases LnL by 0.02 relative to fixing omega at 1.00 (P-value 0.84). Fitting took 22.8 seconds.
+
+2016-02-26 17:29:00,206 - INFO - For site 211, fitting omega to 0.12 increases LnL by 1.60 relative to fixing omega at 1.00 (P-value 0.074). Fitting took 35.7 seconds.
+
+2016-02-26 17:29:21,238 - INFO - For site 212, fitting omega to 0.43 increases LnL by 0.35 relative to fixing omega at 1.00 (P-value 0.41). Fitting took 21.0 seconds.
+
+2016-02-26 17:29:32,258 - INFO - For site 213, fitting omega to 1.11 increases LnL by -0.00 relative to fixing omega at 1.00 (P-value 1). Fitting took 11.4 seconds.
+
+2016-02-26 17:29:51,285 - INFO - For site 214, fitting omega to 0.00 increases LnL by 5.58 relative to fixing omega at 1.00 (P-value 0.00084). Fitting took 18.4 seconds.
+
+2016-02-26 17:30:42,361 - INFO - For site 215, fitting omega to 0.10 increases LnL by 2.33 relative to fixing omega at 1.00 (P-value 0.031). Fitting took 51.0 seconds.
+
+2016-02-26 17:31:06,197 - INFO - For site 216, fitting omega to 0.00 increases LnL by 4.88 relative to fixing omega at 1.00 (P-value 0.0018). Fitting took 24.5 seconds.
+
+2016-02-26 17:31:32,237 - INFO - For site 217, fitting omega to 0.25 increases LnL by 1.37 relative to fixing omega at 1.00 (P-value 0.098). Fitting took 25.4 seconds.
+
+2016-02-26 17:31:56,275 - INFO - For site 218, fitting omega to 0.52 increases LnL by 0.23 relative to fixing omega at 1.00 (P-value 0.5). Fitting took 24.1 seconds.
+
+2016-02-26 17:32:07,295 - INFO - For site 219, fitting omega to 0.35 increases LnL by 0.00 relative to fixing omega at 1.00 (P-value 1). Fitting took 11.4 seconds.
+
+2016-02-26 17:32:31,332 - INFO - For site 220, fitting omega to 0.32 increases LnL by 1.25 relative to fixing omega at 1.00 (P-value 0.11). Fitting took 24.1 seconds.
+
+2016-02-26 17:32:56,370 - INFO - For site 221, fitting omega to 0.00 increases LnL by 2.32 relative to fixing omega at 1.00 (P-value 0.031). Fitting took 24.8 seconds.
+
+2016-02-26 17:33:24,413 - INFO - For site 222, fitting omega to 2.71 increases LnL by 0.50 relative to fixing omega at 1.00 (P-value 0.32). Fitting took 28.2 seconds.
+
+2016-02-26 17:33:50,451 - INFO - For site 223, fitting omega to 0.95 increases LnL by 0.00 relative to fixing omega at 1.00 (P-value 0.94). Fitting took 25.4 seconds.
+
+2016-02-26 17:34:16,492 - INFO - For site 224, fitting omega to 0.48 increases LnL by 0.45 relative to fixing omega at 1.00 (P-value 0.34). Fitting took 26.8 seconds.
+
+2016-02-26 17:34:53,546 - INFO - For site 225, fitting omega to 0.00 increases LnL by 1.30 relative to fixing omega at 1.00 (P-value 0.11). Fitting took 36.3 seconds.
+
+2016-02-26 17:35:24,592 - INFO - For site 226, fitting omega to 0.84 increases LnL by 0.03 relative to fixing omega at 1.00 (P-value 0.82). Fitting took 31.0 seconds.
+
+2016-02-26 17:35:45,621 - INFO - For site 227, fitting omega to 0.00 increases LnL by 6.19 relative to fixing omega at 1.00 (P-value 0.00043). Fitting took 21.1 seconds.
+
+2016-02-26 17:35:56,647 - INFO - For site 228, fitting omega to 0.33 increases LnL by 0.00 relative to fixing omega at 1.00 (P-value 1). Fitting took 11.4 seconds.
+
+2016-02-26 17:36:08,664 - INFO - For site 229, fitting omega to 0.31 increases LnL by 0.00 relative to fixing omega at 1.00 (P-value 1). Fitting took 11.4 seconds.
+
+2016-02-26 17:36:50,724 - INFO - For site 230, fitting omega to 0.06 increases LnL by 3.99 relative to fixing omega at 1.00 (P-value 0.0047). Fitting took 42.7 seconds.
+
+2016-02-26 17:37:17,765 - INFO - For site 231, fitting omega to 1.06 increases LnL by 0.00 relative to fixing omega at 1.00 (P-value 0.93). Fitting took 27.0 seconds.
+
+2016-02-26 17:37:50,815 - INFO - For site 232, fitting omega to 0.00 increases LnL by 3.31 relative to fixing omega at 1.00 (P-value 0.01). Fitting took 32.8 seconds.
+
+2016-02-26 17:38:11,847 - INFO - For site 233, fitting omega to 0.00 increases LnL by 2.23 relative to fixing omega at 1.00 (P-value 0.035). Fitting took 21.5 seconds.
+
+2016-02-26 17:38:41,893 - INFO - For site 234, fitting omega to 0.14 increases LnL by 3.31 relative to fixing omega at 1.00 (P-value 0.01). Fitting took 29.5 seconds.
+
+2016-02-26 17:39:11,938 - INFO - For site 235, fitting omega to 0.10 increases LnL by 2.88 relative to fixing omega at 1.00 (P-value 0.016). Fitting took 30.6 seconds.
+
+2016-02-26 17:39:32,971 - INFO - For site 236, fitting omega to 0.00 increases LnL by 9.03 relative to fixing omega at 1.00 (P-value 2.1e-05). Fitting took 21.1 seconds.
+
+2016-02-26 17:40:05,019 - INFO - For site 237, fitting omega to 2.62 increases LnL by 0.97 relative to fixing omega at 1.00 (P-value 0.16). Fitting took 31.4 seconds.
+
+2016-02-26 17:40:26,049 - INFO - For site 238, fitting omega to 0.00 increases LnL by 6.16 relative to fixing omega at 1.00 (P-value 0.00045). Fitting took 21.2 seconds.
+
+2016-02-26 17:40:53,091 - INFO - For site 239, fitting omega to 1.05 increases LnL by 0.00 relative to fixing omega at 1.00 (P-value 0.95). Fitting took 27.1 seconds.
+
+2016-02-26 17:41:10,119 - INFO - For site 240, fitting omega to 0.00 increases LnL by 5.56 relative to fixing omega at 1.00 (P-value 0.00085). Fitting took 16.8 seconds.
+
+2016-02-26 17:41:37,165 - INFO - For site 241, fitting omega to 0.00 increases LnL by 4.45 relative to fixing omega at 1.00 (P-value 0.0028). Fitting took 27.5 seconds.
+
+2016-02-26 17:42:44,265 - INFO - For site 242, fitting omega to 0.05 increases LnL by 3.52 relative to fixing omega at 1.00 (P-value 0.008). Fitting took 67.4 seconds.
+
+2016-02-26 17:43:53,363 - INFO - For site 243, fitting omega to 999.00 increases LnL by 0.37 relative to fixing omega at 1.00 (P-value 0.39). Fitting took 68.2 seconds.
+
+2016-02-26 17:44:21,406 - INFO - For site 244, fitting omega to 0.00 increases LnL by 1.20 relative to fixing omega at 1.00 (P-value 0.12). Fitting took 28.6 seconds.
+
+2016-02-26 17:44:51,453 - INFO - For site 245, fitting omega to 0.32 increases LnL by 0.47 relative to fixing omega at 1.00 (P-value 0.33). Fitting took 29.5 seconds.
+
+2016-02-26 17:45:02,473 - INFO - For site 246, fitting omega to 0.30 increases LnL by 0.00 relative to fixing omega at 1.00 (P-value 1). Fitting took 11.4 seconds.
+
+2016-02-26 17:45:31,517 - INFO - For site 247, fitting omega to 0.00 increases LnL by 4.09 relative to fixing omega at 1.00 (P-value 0.0042). Fitting took 28.9 seconds.
+
+2016-02-26 17:45:56,559 - INFO - For site 248, fitting omega to 0.00 increases LnL by 2.94 relative to fixing omega at 1.00 (P-value 0.015). Fitting took 25.1 seconds.
+
+2016-02-26 17:46:24,607 - INFO - For site 249, fitting omega to 0.47 increases LnL by 0.67 relative to fixing omega at 1.00 (P-value 0.25). Fitting took 28.3 seconds.
+
+2016-02-26 17:46:48,644 - INFO - For site 250, fitting omega to 0.49 increases LnL by 0.27 relative to fixing omega at 1.00 (P-value 0.46). Fitting took 24.0 seconds.
+
+2016-02-26 17:47:04,671 - INFO - For site 251, fitting omega to 0.00 increases LnL by 3.75 relative to fixing omega at 1.00 (P-value 0.0062). Fitting took 15.8 seconds.
+
+2016-02-26 17:47:33,715 - INFO - For site 252, fitting omega to 0.14 increases LnL by 1.34 relative to fixing omega at 1.00 (P-value 0.1). Fitting took 28.6 seconds.
+
+2016-02-26 17:48:05,762 - INFO - For site 253, fitting omega to 0.00 increases LnL by 1.33 relative to fixing omega at 1.00 (P-value 0.1). Fitting took 32.8 seconds.
+
+2016-02-26 17:48:29,798 - INFO - For site 254, fitting omega to 0.64 increases LnL by 0.06 relative to fixing omega at 1.00 (P-value 0.72). Fitting took 23.4 seconds.
+
+2016-02-26 17:48:40,818 - INFO - For site 255, fitting omega to 0.31 increases LnL by 0.00 relative to fixing omega at 1.00 (P-value 1). Fitting took 11.4 seconds.
+
+2016-02-26 17:49:39,905 - INFO - For site 256, fitting omega to 999.00 increases LnL by 0.82 relative to fixing omega at 1.00 (P-value 0.2). Fitting took 59.4 seconds.
+
+2016-02-26 17:49:59,937 - INFO - For site 257, fitting omega to 0.00 increases LnL by 5.85 relative to fixing omega at 1.00 (P-value 0.00063). Fitting took 19.5 seconds.
+
+2016-02-26 17:50:29,983 - INFO - For site 258, fitting omega to 0.00 increases LnL by 2.59 relative to fixing omega at 1.00 (P-value 0.023). Fitting took 30.7 seconds.
+
+2016-02-26 17:51:06,037 - INFO - For site 259, fitting omega to 0.00 increases LnL by 1.57 relative to fixing omega at 1.00 (P-value 0.077). Fitting took 35.6 seconds.
+
+2016-02-26 17:51:28,073 - INFO - For site 260, fitting omega to 0.79 increases LnL by 0.02 relative to fixing omega at 1.00 (P-value 0.85). Fitting took 22.1 seconds.
+
+2016-02-26 17:52:05,128 - INFO - For site 261, fitting omega to 0.00 increases LnL by 1.63 relative to fixing omega at 1.00 (P-value 0.071). Fitting took 37.3 seconds.
+
+2016-02-26 17:52:36,175 - INFO - For site 262, fitting omega to 0.00 increases LnL by 2.94 relative to fixing omega at 1.00 (P-value 0.015). Fitting took 30.7 seconds.
+
+2016-02-26 17:53:03,212 - INFO - For site 263, fitting omega to 0.00 increases LnL by 2.48 relative to fixing omega at 1.00 (P-value 0.026). Fitting took 26.8 seconds.
+
+2016-02-26 17:53:31,256 - INFO - For site 264, fitting omega to 0.27 increases LnL by 1.23 relative to fixing omega at 1.00 (P-value 0.12). Fitting took 28.1 seconds.
+
+2016-02-26 17:53:59,299 - INFO - For site 265, fitting omega to 0.41 increases LnL by 0.99 relative to fixing omega at 1.00 (P-value 0.16). Fitting took 28.3 seconds.
+
+2016-02-26 17:54:27,341 - INFO - For site 266, fitting omega to 0.00 increases LnL by 3.18 relative to fixing omega at 1.00 (P-value 0.012). Fitting took 27.6 seconds.
+
+2016-02-26 17:55:17,413 - INFO - For site 267, fitting omega to 0.11 increases LnL by 6.20 relative to fixing omega at 1.00 (P-value 0.00043). Fitting took 50.2 seconds.
+
+2016-02-26 17:55:38,447 - INFO - For site 268, fitting omega to 0.59 increases LnL by 0.16 relative to fixing omega at 1.00 (P-value 0.58). Fitting took 21.4 seconds.
+
+2016-02-26 17:55:58,479 - INFO - For site 269, fitting omega to 0.00 increases LnL by 3.77 relative to fixing omega at 1.00 (P-value 0.0061). Fitting took 20.0 seconds.
+
+2016-02-26 17:56:21,515 - INFO - For site 270, fitting omega to 0.00 increases LnL by 8.14 relative to fixing omega at 1.00 (P-value 5.5e-05). Fitting took 22.7 seconds.
+
+2016-02-26 17:57:34,621 - INFO - For site 271, fitting omega to 999.00 increases LnL by 0.24 relative to fixing omega at 1.00 (P-value 0.49). Fitting took 73.5 seconds.
+
+2016-02-26 17:58:04,666 - INFO - For site 272, fitting omega to 0.26 increases LnL by 1.54 relative to fixing omega at 1.00 (P-value 0.079). Fitting took 29.8 seconds.
+
+2016-02-26 17:58:31,708 - INFO - For site 273, fitting omega to 1.11 increases LnL by 0.01 relative to fixing omega at 1.00 (P-value 0.89). Fitting took 27.0 seconds.
+
+2016-02-26 17:59:06,759 - INFO - For site 274, fitting omega to 0.00 increases LnL by 3.49 relative to fixing omega at 1.00 (P-value 0.0083). Fitting took 34.9 seconds.
+
+2016-02-26 17:59:40,812 - INFO - For site 275, fitting omega to 0.21 increases LnL by 3.24 relative to fixing omega at 1.00 (P-value 0.011). Fitting took 34.0 seconds.
+
+2016-02-26 18:00:11,859 - INFO - For site 276, fitting omega to 3.35 increases LnL by 0.88 relative to fixing omega at 1.00 (P-value 0.18). Fitting took 31.3 seconds.
+
+2016-02-26 18:00:42,902 - INFO - For site 277, fitting omega to 0.36 increases LnL by 1.26 relative to fixing omega at 1.00 (P-value 0.11). Fitting took 31.1 seconds.
+
+2016-02-26 18:01:02,930 - INFO - For site 278, fitting omega to 0.00 increases LnL by 3.82 relative to fixing omega at 1.00 (P-value 0.0057). Fitting took 20.0 seconds.
+
+2016-02-26 18:01:37,983 - INFO - For site 279, fitting omega to 0.08 increases LnL by 3.29 relative to fixing omega at 1.00 (P-value 0.01). Fitting took 34.5 seconds.
+
+2016-02-26 18:01:56,013 - INFO - For site 280, fitting omega to 0.00 increases LnL by 5.50 relative to fixing omega at 1.00 (P-value 0.00091). Fitting took 18.5 seconds.
+
+2016-02-26 18:02:16,044 - INFO - For site 281, fitting omega to 0.00 increases LnL by 4.91 relative to fixing omega at 1.00 (P-value 0.0017). Fitting took 20.0 seconds.
+
+2016-02-26 18:02:43,085 - INFO - For site 282, fitting omega to 1.52 increases LnL by 0.13 relative to fixing omega at 1.00 (P-value 0.61). Fitting took 27.1 seconds.
+
+2016-02-26 18:03:01,114 - INFO - For site 283, fitting omega to 0.00 increases LnL by 6.68 relative to fixing omega at 1.00 (P-value 0.00026). Fitting took 18.4 seconds.
+
+2016-02-26 18:03:28,155 - INFO - For site 284, fitting omega to 0.20 increases LnL by 1.51 relative to fixing omega at 1.00 (P-value 0.083). Fitting took 26.5 seconds.
+
+2016-02-26 18:03:50,191 - INFO - For site 285, fitting omega to 0.56 increases LnL by 0.20 relative to fixing omega at 1.00 (P-value 0.52). Fitting took 22.6 seconds.
+
+2016-02-26 18:04:26,245 - INFO - For site 286, fitting omega to 0.47 increases LnL by 0.64 relative to fixing omega at 1.00 (P-value 0.26). Fitting took 35.3 seconds.
+
+2016-02-26 18:05:03,300 - INFO - For site 287, fitting omega to 0.16 increases LnL by 3.95 relative to fixing omega at 1.00 (P-value 0.0049). Fitting took 37.9 seconds.
+
+2016-02-26 18:05:40,356 - INFO - For site 288, fitting omega to 0.27 increases LnL by 2.05 relative to fixing omega at 1.00 (P-value 0.043). Fitting took 36.6 seconds.
+
+2016-02-26 18:06:14,406 - INFO - For site 289, fitting omega to 0.16 increases LnL by 1.90 relative to fixing omega at 1.00 (P-value 0.051). Fitting took 34.5 seconds.
+
+2016-02-26 18:06:40,445 - INFO - For site 290, fitting omega to 0.00 increases LnL by 4.98 relative to fixing omega at 1.00 (P-value 0.0016). Fitting took 25.3 seconds.
+
+2016-02-26 18:07:07,488 - INFO - For site 291, fitting omega to 0.36 increases LnL by 0.95 relative to fixing omega at 1.00 (P-value 0.17). Fitting took 26.8 seconds.
+
+2016-02-26 18:07:40,538 - INFO - For site 292, fitting omega to 0.37 increases LnL by 0.93 relative to fixing omega at 1.00 (P-value 0.17). Fitting took 33.8 seconds.
+
+2016-02-26 18:08:13,584 - INFO - For site 293, fitting omega to 1.42 increases LnL by 0.13 relative to fixing omega at 1.00 (P-value 0.62). Fitting took 32.6 seconds.
+
+2016-02-26 18:08:40,628 - INFO - For site 294, fitting omega to 0.00 increases LnL by 3.35 relative to fixing omega at 1.00 (P-value 0.0097). Fitting took 27.6 seconds.
+
+2016-02-26 18:09:01,661 - INFO - For site 295, fitting omega to 0.00 increases LnL by 5.80 relative to fixing omega at 1.00 (P-value 0.00066). Fitting took 21.0 seconds.
+
+2016-02-26 18:09:39,719 - INFO - For site 296, fitting omega to 0.00 increases LnL by 1.43 relative to fixing omega at 1.00 (P-value 0.091). Fitting took 37.3 seconds.
+
+2016-02-26 18:09:58,749 - INFO - For site 297, fitting omega to 0.00 increases LnL by 4.86 relative to fixing omega at 1.00 (P-value 0.0018). Fitting took 19.9 seconds.
+
+2016-02-26 18:10:28,793 - INFO - For site 298, fitting omega to 0.54 increases LnL by 0.49 relative to fixing omega at 1.00 (P-value 0.32). Fitting took 29.9 seconds.
+
+2016-02-26 18:11:01,842 - INFO - For site 299, fitting omega to 0.00 increases LnL by 1.44 relative to fixing omega at 1.00 (P-value 0.09). Fitting took 32.9 seconds.
+
+2016-02-26 18:11:18,871 - INFO - For site 300, fitting omega to 0.00 increases LnL by 5.25 relative to fixing omega at 1.00 (P-value 0.0012). Fitting took 16.8 seconds.
+
+2016-02-26 18:12:44,994 - INFO - For site 301, fitting omega to 999.00 increases LnL by 0.09 relative to fixing omega at 1.00 (P-value 0.68). Fitting took 86.2 seconds.
+
+2016-02-26 18:12:57,016 - INFO - For site 302, fitting omega to 1.83 increases LnL by 0.00 relative to fixing omega at 1.00 (P-value 1). Fitting took 11.5 seconds.
+
+2016-02-26 18:13:23,057 - INFO - For site 303, fitting omega to 0.29 increases LnL by 0.90 relative to fixing omega at 1.00 (P-value 0.18). Fitting took 26.5 seconds.
+
+2016-02-26 18:13:42,089 - INFO - For site 304, fitting omega to 0.00 increases LnL by 7.67 relative to fixing omega at 1.00 (P-value 8.9e-05). Fitting took 19.5 seconds.
+
+2016-02-26 18:14:07,129 - INFO - For site 305, fitting omega to 0.00 increases LnL by 8.96 relative to fixing omega at 1.00 (P-value 2.3e-05). Fitting took 24.4 seconds.
+
+2016-02-26 18:14:28,162 - INFO - For site 306, fitting omega to 0.00 increases LnL by 6.04 relative to fixing omega at 1.00 (P-value 0.00051). Fitting took 21.1 seconds.
+
+2016-02-26 18:15:00,212 - INFO - For site 307, fitting omega to 0.09 increases LnL by 2.53 relative to fixing omega at 1.00 (P-value 0.024). Fitting took 31.7 seconds.
+
+2016-02-26 18:15:23,248 - INFO - For site 308, fitting omega to 0.00 increases LnL by 1.74 relative to fixing omega at 1.00 (P-value 0.062). Fitting took 23.4 seconds.
+
+2016-02-26 18:15:46,285 - INFO - For site 309, fitting omega to 0.00 increases LnL by 7.51 relative to fixing omega at 1.00 (P-value 0.00011). Fitting took 22.9 seconds.
+
+2016-02-26 18:16:30,351 - INFO - For site 310, fitting omega to 0.18 increases LnL by 1.41 relative to fixing omega at 1.00 (P-value 0.094). Fitting took 44.2 seconds.
+
+2016-02-26 18:16:58,395 - INFO - For site 311, fitting omega to 0.00 increases LnL by 3.27 relative to fixing omega at 1.00 (P-value 0.011). Fitting took 27.9 seconds.
+
+2016-02-26 18:17:25,437 - INFO - For site 312, fitting omega to 0.00 increases LnL by 3.30 relative to fixing omega at 1.00 (P-value 0.01). Fitting took 27.6 seconds.
+
+2016-02-26 18:17:55,708 - INFO - For site 313, fitting omega to 1.04 increases LnL by 0.00 relative to fixing omega at 1.00 (P-value 0.96). Fitting took 30.1 seconds.
+
+2016-02-26 18:18:28,758 - INFO - For site 314, fitting omega to 0.30 increases LnL by 0.33 relative to fixing omega at 1.00 (P-value 0.42). Fitting took 32.7 seconds.
+
+2016-02-26 18:18:57,801 - INFO - For site 315, fitting omega to 0.00 increases LnL by 3.36 relative to fixing omega at 1.00 (P-value 0.0095). Fitting took 29.4 seconds.
+
+2016-02-26 18:19:24,846 - INFO - For site 316, fitting omega to 0.00 increases LnL by 6.55 relative to fixing omega at 1.00 (P-value 0.0003). Fitting took 27.0 seconds.
+
+2016-02-26 18:19:54,892 - INFO - For site 317, fitting omega to 0.36 increases LnL by 0.25 relative to fixing omega at 1.00 (P-value 0.48). Fitting took 29.6 seconds.
+
+2016-02-26 18:20:18,931 - INFO - For site 318, fitting omega to 0.00 increases LnL by 3.11 relative to fixing omega at 1.00 (P-value 0.013). Fitting took 24.6 seconds.
+
+2016-02-26 18:20:46,974 - INFO - For site 319, fitting omega to 0.00 increases LnL by 3.35 relative to fixing omega at 1.00 (P-value 0.0096). Fitting took 27.5 seconds.
+
+2016-02-26 18:21:15,018 - INFO - For site 320, fitting omega to 0.00 increases LnL by 5.64 relative to fixing omega at 1.00 (P-value 0.00079). Fitting took 29.0 seconds.
+
+2016-02-26 18:21:33,048 - INFO - For site 321, fitting omega to 0.00 increases LnL by 5.94 relative to fixing omega at 1.00 (P-value 0.00057). Fitting took 17.4 seconds.
+
+2016-02-26 18:21:54,083 - INFO - For site 322, fitting omega to 0.00 increases LnL by 4.14 relative to fixing omega at 1.00 (P-value 0.004). Fitting took 21.1 seconds.
+
+2016-02-26 18:22:14,116 - INFO - For site 323, fitting omega to 0.80 increases LnL by 0.04 relative to fixing omega at 1.00 (P-value 0.76). Fitting took 20.0 seconds.
+
+2016-02-26 18:22:43,161 - INFO - For site 324, fitting omega to 0.00 increases LnL by 2.99 relative to fixing omega at 1.00 (P-value 0.014). Fitting took 29.2 seconds.
+
+2016-02-26 18:23:16,211 - INFO - For site 325, fitting omega to 0.24 increases LnL by 2.36 relative to fixing omega at 1.00 (P-value 0.03). Fitting took 32.4 seconds.
+
+2016-02-26 18:23:49,261 - INFO - For site 326, fitting omega to 0.14 increases LnL by 1.31 relative to fixing omega at 1.00 (P-value 0.11). Fitting took 33.6 seconds.
+
+2016-02-26 18:24:16,299 - INFO - For site 327, fitting omega to 0.00 increases LnL by 4.89 relative to fixing omega at 1.00 (P-value 0.0018). Fitting took 26.9 seconds.
+
+2016-02-26 18:24:55,358 - INFO - For site 328, fitting omega to 0.05 increases LnL by 6.83 relative to fixing omega at 1.00 (P-value 0.00022). Fitting took 38.9 seconds.
+
+2016-02-26 18:27:29,576 - INFO - For site 329, fitting omega to 999.00 increases LnL by 0.01 relative to fixing omega at 1.00 (P-value 0.87). Fitting took 154.9 seconds.
+
+2016-02-26 18:27:48,605 - INFO - For site 330, fitting omega to 1.31 increases LnL by 0.03 relative to fixing omega at 1.00 (P-value 0.81). Fitting took 18.5 seconds.
+
+2016-02-26 18:28:25,659 - INFO - For site 331, fitting omega to 0.00 increases LnL by 1.44 relative to fixing omega at 1.00 (P-value 0.089). Fitting took 37.2 seconds.
+
+2016-02-26 18:29:02,714 - INFO - For site 332, fitting omega to 0.00 increases LnL by 1.65 relative to fixing omega at 1.00 (P-value 0.07). Fitting took 37.1 seconds.
+
+2016-02-26 18:29:26,752 - INFO - For site 333, fitting omega to 0.00 increases LnL by 4.25 relative to fixing omega at 1.00 (P-value 0.0036). Fitting took 24.1 seconds.
+
+2016-02-26 18:29:46,785 - INFO - For site 334, fitting omega to 0.00 increases LnL by 9.62 relative to fixing omega at 1.00 (P-value 1.2e-05). Fitting took 20.1 seconds.
+
+2016-02-26 18:30:23,840 - INFO - For site 335, fitting omega to 0.00 increases LnL by 5.42 relative to fixing omega at 1.00 (P-value 0.00099). Fitting took 36.4 seconds.
+
+2016-02-26 18:31:07,915 - INFO - For site 336, fitting omega to 0.21 increases LnL by 2.02 relative to fixing omega at 1.00 (P-value 0.045). Fitting took 44.1 seconds.
+
+2016-02-26 18:31:49,978 - INFO - For site 337, fitting omega to 0.08 increases LnL by 3.30 relative to fixing omega at 1.00 (P-value 0.01). Fitting took 42.0 seconds.
+
+2016-02-26 18:32:07,006 - INFO - For site 338, fitting omega to 0.00 increases LnL by 5.82 relative to fixing omega at 1.00 (P-value 0.00065). Fitting took 17.4 seconds.
+
+2016-02-26 18:32:40,056 - INFO - For site 339, fitting omega to 0.09 increases LnL by 3.15 relative to fixing omega at 1.00 (P-value 0.012). Fitting took 33.4 seconds.
+
+2016-02-26 18:33:13,105 - INFO - For site 340, fitting omega to 0.00 increases LnL by 1.70 relative to fixing omega at 1.00 (P-value 0.065). Fitting took 32.6 seconds.
+
+2016-02-26 18:33:31,135 - INFO - For site 341, fitting omega to 0.00 increases LnL by 4.64 relative to fixing omega at 1.00 (P-value 0.0023). Fitting took 18.4 seconds.
+
+2016-02-26 18:33:58,176 - INFO - For site 342, fitting omega to 0.00 increases LnL by 7.63 relative to fixing omega at 1.00 (P-value 9.3e-05). Fitting took 26.9 seconds.
+
+2016-02-26 18:34:27,220 - INFO - For site 343, fitting omega to 0.00 increases LnL by 1.24 relative to fixing omega at 1.00 (P-value 0.12). Fitting took 28.7 seconds.
+
+2016-02-26 18:34:55,263 - INFO - For site 344, fitting omega to 0.00 increases LnL by 3.52 relative to fixing omega at 1.00 (P-value 0.008). Fitting took 28.3 seconds.
+
+2016-02-26 18:35:29,314 - INFO - For site 345, fitting omega to 0.00 increases LnL by 1.60 relative to fixing omega at 1.00 (P-value 0.073). Fitting took 34.0 seconds.
+
+2016-02-26 18:35:50,348 - INFO - For site 346, fitting omega to 0.00 increases LnL by 9.10 relative to fixing omega at 1.00 (P-value 2e-05). Fitting took 21.2 seconds.
+
+2016-02-26 18:36:20,393 - INFO - For site 347, fitting omega to 0.00 increases LnL by 2.13 relative to fixing omega at 1.00 (P-value 0.039). Fitting took 30.0 seconds.
+
+2016-02-26 18:36:32,414 - INFO - For site 348, fitting omega to 1.84 increases LnL by 0.00 relative to fixing omega at 1.00 (P-value 1). Fitting took 11.4 seconds.
+
+2016-02-26 18:36:46,437 - INFO - For site 349, fitting omega to 0.00 increases LnL by 4.85 relative to fixing omega at 1.00 (P-value 0.0018). Fitting took 14.1 seconds.
+
+2016-02-26 18:37:06,469 - INFO - For site 350, fitting omega to 0.00 increases LnL by 7.60 relative to fixing omega at 1.00 (P-value 9.6e-05). Fitting took 20.0 seconds.
+
+2016-02-26 18:37:25,500 - INFO - For site 351, fitting omega to 0.00 increases LnL by 6.02 relative to fixing omega at 1.00 (P-value 0.00052). Fitting took 19.4 seconds.
+
+2016-02-26 18:37:52,612 - INFO - For site 352, fitting omega to 0.43 increases LnL by 0.17 relative to fixing omega at 1.00 (P-value 0.56). Fitting took 27.3 seconds.
+
+2016-02-26 18:38:19,656 - INFO - For site 353, fitting omega to 0.00 increases LnL by 14.47 relative to fixing omega at 1.00 (P-value 7.5e-08). Fitting took 27.0 seconds.
+
+2016-02-26 18:38:38,687 - INFO - For site 354, fitting omega to 0.00 increases LnL by 5.11 relative to fixing omega at 1.00 (P-value 0.0014). Fitting took 19.5 seconds.
+
+2016-02-26 18:39:01,723 - INFO - For site 355, fitting omega to 0.00 increases LnL by 10.63 relative to fixing omega at 1.00 (P-value 4e-06). Fitting took 22.6 seconds.
+
+2016-02-26 18:39:13,744 - INFO - For site 356, fitting omega to 0.30 increases LnL by 0.00 relative to fixing omega at 1.00 (P-value 1). Fitting took 11.4 seconds.
+
+2016-02-26 18:39:41,787 - INFO - For site 357, fitting omega to 0.35 increases LnL by 0.26 relative to fixing omega at 1.00 (P-value 0.47). Fitting took 28.1 seconds.
+
+2016-02-26 18:40:08,828 - INFO - For site 358, fitting omega to 0.00 increases LnL by 6.35 relative to fixing omega at 1.00 (P-value 0.00037). Fitting took 27.1 seconds.
+
+2016-02-26 18:44:33,198 - INFO - For site 359, fitting omega to 999.00 increases LnL by 0.01 relative to fixing omega at 1.00 (P-value 0.92). Fitting took 264.5 seconds.
+
+2016-02-26 18:45:22,269 - INFO - For site 360, fitting omega to 0.20 increases LnL by 1.37 relative to fixing omega at 1.00 (P-value 0.098). Fitting took 49.1 seconds.
+
+2016-02-26 18:45:33,289 - INFO - For site 361, fitting omega to 0.32 increases LnL by 0.00 relative to fixing omega at 1.00 (P-value 1). Fitting took 11.4 seconds.
+
+2016-02-26 18:45:54,323 - INFO - For site 362, fitting omega to 0.00 increases LnL by 9.53 relative to fixing omega at 1.00 (P-value 1.3e-05). Fitting took 21.1 seconds.
+
+2016-02-26 18:46:06,340 - INFO - For site 363, fitting omega to 0.30 increases LnL by 0.00 relative to fixing omega at 1.00 (P-value 1). Fitting took 11.4 seconds.
+
+2016-02-26 18:46:29,376 - INFO - For site 364, fitting omega to 0.00 increases LnL by 2.27 relative to fixing omega at 1.00 (P-value 0.033). Fitting took 23.2 seconds.
+
+2016-02-26 18:46:40,396 - INFO - For site 365, fitting omega to 0.38 increases LnL by 0.00 relative to fixing omega at 1.00 (P-value 1). Fitting took 11.5 seconds.
+
+2016-02-26 18:47:03,431 - INFO - For site 366, fitting omega to 0.00 increases LnL by 7.21 relative to fixing omega at 1.00 (P-value 0.00015). Fitting took 22.7 seconds.
+
+2016-02-26 18:47:24,466 - INFO - For site 367, fitting omega to 0.00 increases LnL by 7.99 relative to fixing omega at 1.00 (P-value 6.4e-05). Fitting took 21.1 seconds.
+
+2016-02-26 18:47:52,510 - INFO - For site 368, fitting omega to 0.00 increases LnL by 3.46 relative to fixing omega at 1.00 (P-value 0.0085). Fitting took 27.6 seconds.
+
+2016-02-26 18:48:11,540 - INFO - For site 369, fitting omega to 0.00 increases LnL by 3.17 relative to fixing omega at 1.00 (P-value 0.012). Fitting took 20.0 seconds.
+
+2016-02-26 18:48:49,597 - INFO - For site 370, fitting omega to 0.00 increases LnL by 1.47 relative to fixing omega at 1.00 (P-value 0.087). Fitting took 37.2 seconds.
+
+2016-02-26 18:49:25,652 - INFO - For site 371, fitting omega to 0.10 increases LnL by 6.58 relative to fixing omega at 1.00 (P-value 0.00029). Fitting took 36.4 seconds.
+
+2016-02-26 18:49:48,688 - INFO - For site 372, fitting omega to 0.00 increases LnL by 2.67 relative to fixing omega at 1.00 (P-value 0.021). Fitting took 22.7 seconds.
+
+2016-02-26 18:50:18,734 - INFO - For site 373, fitting omega to 0.00 increases LnL by 3.20 relative to fixing omega at 1.00 (P-value 0.011). Fitting took 30.7 seconds.
+
+2016-02-26 18:50:41,770 - INFO - For site 374, fitting omega to 0.34 increases LnL by 0.27 relative to fixing omega at 1.00 (P-value 0.46). Fitting took 22.5 seconds.
+
+2016-02-26 18:51:03,805 - INFO - For site 375, fitting omega to 0.00 increases LnL by 5.58 relative to fixing omega at 1.00 (P-value 0.00084). Fitting took 22.8 seconds.
+
+2016-02-26 18:51:29,845 - INFO - For site 376, fitting omega to 0.40 increases LnL by 0.20 relative to fixing omega at 1.00 (P-value 0.53). Fitting took 25.8 seconds.
+
+2016-02-26 18:51:55,886 - INFO - For site 377, fitting omega to 0.00 increases LnL by 4.58 relative to fixing omega at 1.00 (P-value 0.0025). Fitting took 26.1 seconds.
+
+2016-02-26 18:52:20,924 - INFO - For site 378, fitting omega to 0.00 increases LnL by 9.53 relative to fixing omega at 1.00 (P-value 1.3e-05). Fitting took 24.3 seconds.
+
+2016-02-26 18:52:46,964 - INFO - For site 379, fitting omega to 0.00 increases LnL by 4.37 relative to fixing omega at 1.00 (P-value 0.0031). Fitting took 26.3 seconds.
+
+2016-02-26 18:53:10,000 - INFO - For site 380, fitting omega to 0.89 increases LnL by 0.01 relative to fixing omega at 1.00 (P-value 0.9). Fitting took 22.7 seconds.
+
+2016-02-26 18:53:39,045 - INFO - For site 381, fitting omega to 0.12 increases LnL by 2.35 relative to fixing omega at 1.00 (P-value 0.03). Fitting took 29.4 seconds.
+
+2016-02-26 18:54:05,086 - INFO - For site 382, fitting omega to 0.00 increases LnL by 2.69 relative to fixing omega at 1.00 (P-value 0.02). Fitting took 26.4 seconds.
+
+2016-02-26 18:54:42,142 - INFO - For site 383, fitting omega to 0.00 increases LnL by 1.42 relative to fixing omega at 1.00 (P-value 0.091). Fitting took 37.1 seconds.
+
+2016-02-26 18:55:02,174 - INFO - For site 384, fitting omega to 0.00 increases LnL by 3.43 relative to fixing omega at 1.00 (P-value 0.0088). Fitting took 20.1 seconds.
+
+2016-02-26 18:55:32,221 - INFO - For site 385, fitting omega to 0.29 increases LnL by 0.71 relative to fixing omega at 1.00 (P-value 0.23). Fitting took 29.8 seconds.
+
+2016-02-26 18:56:02,266 - INFO - For site 386, fitting omega to 0.00 increases LnL by 2.13 relative to fixing omega at 1.00 (P-value 0.039). Fitting took 30.0 seconds.
+
+2016-02-26 18:56:22,299 - INFO - For site 387, fitting omega to 0.00 increases LnL by 4.92 relative to fixing omega at 1.00 (P-value 0.0017). Fitting took 20.1 seconds.
+
+2016-02-26 18:56:55,351 - INFO - For site 388, fitting omega to 0.09 increases LnL by 2.96 relative to fixing omega at 1.00 (P-value 0.015). Fitting took 33.2 seconds.
+
+2016-02-26 18:57:26,394 - INFO - For site 389, fitting omega to 0.58 increases LnL by 0.28 relative to fixing omega at 1.00 (P-value 0.46). Fitting took 31.0 seconds.
+
+2016-02-26 18:57:56,437 - INFO - For site 390, fitting omega to 0.16 increases LnL by 1.51 relative to fixing omega at 1.00 (P-value 0.083). Fitting took 29.4 seconds.
+
+2016-02-26 18:58:22,484 - INFO - For site 391, fitting omega to 0.00 increases LnL by 2.62 relative to fixing omega at 1.00 (P-value 0.022). Fitting took 26.4 seconds.
+
+2016-02-26 18:58:55,536 - INFO - For site 392, fitting omega to 0.00 increases LnL by 1.22 relative to fixing omega at 1.00 (P-value 0.12). Fitting took 32.8 seconds.
+
+2016-02-26 18:59:15,568 - INFO - For site 393, fitting omega to 0.00 increases LnL by 5.74 relative to fixing omega at 1.00 (P-value 0.00071). Fitting took 20.0 seconds.
+
+2016-02-26 18:59:41,610 - INFO - For site 394, fitting omega to 0.00 increases LnL by 3.58 relative to fixing omega at 1.00 (P-value 0.0075). Fitting took 26.2 seconds.
+
+2016-02-26 19:00:02,645 - INFO - For site 395, fitting omega to 0.00 increases LnL by 8.49 relative to fixing omega at 1.00 (P-value 3.8e-05). Fitting took 21.1 seconds.
+
+2016-02-26 19:01:07,741 - INFO - For site 396, fitting omega to 999.00 increases LnL by 0.35 relative to fixing omega at 1.00 (P-value 0.4). Fitting took 64.8 seconds.
+
+2016-02-26 19:01:33,783 - INFO - For site 397, fitting omega to 0.66 increases LnL by 0.15 relative to fixing omega at 1.00 (P-value 0.58). Fitting took 25.8 seconds.
+
+2016-02-26 19:01:56,821 - INFO - For site 398, fitting omega to 0.00 increases LnL by 2.21 relative to fixing omega at 1.00 (P-value 0.036). Fitting took 23.7 seconds.
+
+2016-02-26 19:02:33,879 - INFO - For site 399, fitting omega to 0.00 increases LnL by 1.35 relative to fixing omega at 1.00 (P-value 0.1). Fitting took 37.1 seconds.
+
+2016-02-26 19:02:59,919 - INFO - For site 400, fitting omega to 0.00 increases LnL by 4.37 relative to fixing omega at 1.00 (P-value 0.0031). Fitting took 26.2 seconds.
+
+2016-02-26 19:03:11,941 - INFO - For site 401, fitting omega to 0.30 increases LnL by 0.00 relative to fixing omega at 1.00 (P-value 1). Fitting took 11.5 seconds.
+
+2016-02-26 19:03:37,982 - INFO - For site 402, fitting omega to 0.00 increases LnL by 2.39 relative to fixing omega at 1.00 (P-value 0.029). Fitting took 26.4 seconds.
+
+2016-02-26 19:04:05,024 - INFO - For site 403, fitting omega to 0.55 increases LnL by 0.30 relative to fixing omega at 1.00 (P-value 0.44). Fitting took 26.7 seconds.
+
+2016-02-26 19:04:32,066 - INFO - For site 404, fitting omega to 0.00 increases LnL by 3.58 relative to fixing omega at 1.00 (P-value 0.0074). Fitting took 27.0 seconds.
+
+2016-02-26 19:05:08,122 - INFO - For site 405, fitting omega to 0.00 increases LnL by 1.30 relative to fixing omega at 1.00 (P-value 0.11). Fitting took 36.4 seconds.
+
+2016-02-26 19:05:35,164 - INFO - For site 406, fitting omega to 0.00 increases LnL by 5.83 relative to fixing omega at 1.00 (P-value 0.00064). Fitting took 27.0 seconds.
+
+2016-02-26 19:06:04,208 - INFO - For site 407, fitting omega to 0.19 increases LnL by 1.64 relative to fixing omega at 1.00 (P-value 0.071). Fitting took 29.2 seconds.
+
+2016-02-26 19:06:29,248 - INFO - For site 408, fitting omega to 0.00 increases LnL by 2.99 relative to fixing omega at 1.00 (P-value 0.015). Fitting took 24.3 seconds.
+
+2016-02-26 19:06:53,287 - INFO - For site 409, fitting omega to 0.00 increases LnL by 3.81 relative to fixing omega at 1.00 (P-value 0.0057). Fitting took 24.4 seconds.
+
+2016-02-26 19:07:24,334 - INFO - For site 410, fitting omega to 0.30 increases LnL by 0.34 relative to fixing omega at 1.00 (P-value 0.41). Fitting took 31.3 seconds.
+
+2016-02-26 19:07:57,382 - INFO - For site 411, fitting omega to 0.00 increases LnL by 3.18 relative to fixing omega at 1.00 (P-value 0.012). Fitting took 32.8 seconds.
+
+2016-02-26 19:08:17,413 - INFO - For site 412, fitting omega to 0.00 increases LnL by 3.96 relative to fixing omega at 1.00 (P-value 0.0049). Fitting took 19.9 seconds.
+
+2016-02-26 19:08:39,448 - INFO - For site 413, fitting omega to 0.64 increases LnL by 0.11 relative to fixing omega at 1.00 (P-value 0.63). Fitting took 22.5 seconds.
+
+2016-02-26 19:09:37,533 - INFO - For site 414, fitting omega to 999.00 increases LnL by 1.17 relative to fixing omega at 1.00 (P-value 0.13). Fitting took 57.8 seconds.
+
+2016-02-26 19:10:00,570 - INFO - For site 415, fitting omega to 0.00 increases LnL by 6.96 relative to fixing omega at 1.00 (P-value 0.00019). Fitting took 23.1 seconds.
+
+2016-02-26 19:10:28,609 - INFO - For site 416, fitting omega to 0.00 increases LnL by 5.36 relative to fixing omega at 1.00 (P-value 0.0011). Fitting took 27.5 seconds.
+
+2016-02-26 19:10:50,643 - INFO - For site 417, fitting omega to 1.02 increases LnL by 0.00 relative to fixing omega at 1.00 (P-value 0.98). Fitting took 22.9 seconds.
+
+2016-02-26 19:11:15,683 - INFO - For site 418, fitting omega to 0.00 increases LnL by 4.27 relative to fixing omega at 1.00 (P-value 0.0035). Fitting took 24.8 seconds.
+
+2016-02-26 19:12:46,814 - INFO - For site 419, fitting omega to 999.00 increases LnL by 0.06 relative to fixing omega at 1.00 (P-value 0.73). Fitting took 91.1 seconds.
+
+2016-02-26 19:13:21,868 - INFO - For site 420, fitting omega to 0.09 increases LnL by 3.14 relative to fixing omega at 1.00 (P-value 0.012). Fitting took 35.0 seconds.
+
+2016-02-26 19:13:52,915 - INFO - For site 421, fitting omega to 0.16 increases LnL by 2.34 relative to fixing omega at 1.00 (P-value 0.031). Fitting took 30.6 seconds.
+
+2016-02-26 19:14:17,950 - INFO - For site 422, fitting omega to 0.00 increases LnL by 4.75 relative to fixing omega at 1.00 (P-value 0.0021). Fitting took 25.4 seconds.
+
+2016-02-26 19:14:38,985 - INFO - For site 423, fitting omega to 0.00 increases LnL by 7.13 relative to fixing omega at 1.00 (P-value 0.00016). Fitting took 21.1 seconds.
+
+2016-02-26 19:15:06,028 - INFO - For site 424, fitting omega to 0.59 increases LnL by 0.16 relative to fixing omega at 1.00 (P-value 0.57). Fitting took 26.8 seconds.
+
+2016-02-26 19:15:32,069 - INFO - For site 425, fitting omega to 0.00 increases LnL by 4.73 relative to fixing omega at 1.00 (P-value 0.0021). Fitting took 26.2 seconds.
+
+2016-02-26 19:15:56,108 - INFO - For site 426, fitting omega to 0.00 increases LnL by 3.54 relative to fixing omega at 1.00 (P-value 0.0078). Fitting took 24.2 seconds.
+
+2016-02-26 19:16:08,129 - INFO - For site 427, fitting omega to 0.32 increases LnL by 0.00 relative to fixing omega at 1.00 (P-value 1). Fitting took 11.4 seconds.
+
+2016-02-26 19:16:19,149 - INFO - For site 428, fitting omega to 0.32 increases LnL by 0.00 relative to fixing omega at 1.00 (P-value 1). Fitting took 11.4 seconds.
+
+2016-02-26 19:16:46,192 - INFO - For site 429, fitting omega to 0.00 increases LnL by 15.56 relative to fixing omega at 1.00 (P-value 2.4e-08). Fitting took 27.1 seconds.
+
+2016-02-26 19:17:12,232 - INFO - For site 430, fitting omega to 0.00 increases LnL by 4.84 relative to fixing omega at 1.00 (P-value 0.0019). Fitting took 25.4 seconds.
+
+2016-02-26 19:18:03,307 - INFO - For site 431, fitting omega to 0.44 increases LnL by 0.58 relative to fixing omega at 1.00 (P-value 0.28). Fitting took 51.5 seconds.
+
+2016-02-26 19:18:46,369 - INFO - For site 432, fitting omega to 0.07 increases LnL by 3.88 relative to fixing omega at 1.00 (P-value 0.0054). Fitting took 43.1 seconds.
+
+2016-02-26 19:19:44,455 - INFO - For site 433, fitting omega to 999.00 increases LnL by 1.51 relative to fixing omega at 1.00 (P-value 0.083). Fitting took 57.7 seconds.
+
+2016-02-26 19:19:55,476 - INFO - For site 434, fitting omega to 0.30 increases LnL by 0.00 relative to fixing omega at 1.00 (P-value 1). Fitting took 11.4 seconds.
+
+2016-02-26 19:20:24,521 - INFO - For site 435, fitting omega to 0.00 increases LnL by 4.09 relative to fixing omega at 1.00 (P-value 0.0042). Fitting took 28.8 seconds.
+
+2016-02-26 19:20:49,560 - INFO - For site 436, fitting omega to 0.00 increases LnL by 2.21 relative to fixing omega at 1.00 (P-value 0.036). Fitting took 24.8 seconds.
+
+2016-02-26 19:21:15,601 - INFO - For site 437, fitting omega to 0.00 increases LnL by 5.96 relative to fixing omega at 1.00 (P-value 0.00055). Fitting took 27.0 seconds.
+
+2016-02-26 19:21:47,649 - INFO - For site 438, fitting omega to 0.00 increases LnL by 1.31 relative to fixing omega at 1.00 (P-value 0.1). Fitting took 31.4 seconds.
+
+2016-02-26 19:22:19,694 - INFO - For site 439, fitting omega to 0.00 increases LnL by 3.34 relative to fixing omega at 1.00 (P-value 0.0098). Fitting took 32.7 seconds.
+
+2016-02-26 19:23:08,762 - INFO - For site 440, fitting omega to 0.25 increases LnL by 1.10 relative to fixing omega at 1.00 (P-value 0.14). Fitting took 48.9 seconds.
+
+2016-02-26 19:23:38,807 - INFO - For site 441, fitting omega to 0.00 increases LnL by 4.20 relative to fixing omega at 1.00 (P-value 0.0038). Fitting took 29.7 seconds.
+
+2016-02-26 19:24:02,851 - INFO - For site 442, fitting omega to 0.44 increases LnL by 0.16 relative to fixing omega at 1.00 (P-value 0.57). Fitting took 23.8 seconds.
+
+2016-02-26 19:24:27,890 - INFO - For site 443, fitting omega to 0.00 increases LnL by 2.90 relative to fixing omega at 1.00 (P-value 0.016). Fitting took 25.1 seconds.
+
+2016-02-26 19:24:57,937 - INFO - For site 444, fitting omega to 0.00 increases LnL by 1.03 relative to fixing omega at 1.00 (P-value 0.15). Fitting took 30.0 seconds.
+
+2016-02-26 19:25:33,990 - INFO - For site 445, fitting omega to 0.00 increases LnL by 1.68 relative to fixing omega at 1.00 (P-value 0.066). Fitting took 36.3 seconds.
+
+2016-02-26 19:26:05,038 - INFO - For site 446, fitting omega to 0.00 increases LnL by 2.95 relative to fixing omega at 1.00 (P-value 0.015). Fitting took 30.7 seconds.
+
+2016-02-26 19:26:39,086 - INFO - For site 447, fitting omega to 0.11 increases LnL by 1.63 relative to fixing omega at 1.00 (P-value 0.071). Fitting took 34.7 seconds.
+
+2016-02-26 19:27:06,126 - INFO - For site 448, fitting omega to 0.00 increases LnL by 5.90 relative to fixing omega at 1.00 (P-value 0.00059). Fitting took 27.0 seconds.
+
+2016-02-26 19:27:31,166 - INFO - For site 449, fitting omega to 0.00 increases LnL by 2.72 relative to fixing omega at 1.00 (P-value 0.02). Fitting took 25.0 seconds.
+
+2016-02-26 19:27:58,209 - INFO - For site 450, fitting omega to 0.00 increases LnL by 2.56 relative to fixing omega at 1.00 (P-value 0.024). Fitting took 26.8 seconds.
+
+2016-02-26 19:28:27,253 - INFO - For site 451, fitting omega to 0.00 increases LnL by 3.23 relative to fixing omega at 1.00 (P-value 0.011). Fitting took 29.4 seconds.
+
+2016-02-26 19:29:10,316 - INFO - For site 452, fitting omega to 0.05 increases LnL by 5.59 relative to fixing omega at 1.00 (P-value 0.00082). Fitting took 43.1 seconds.
+
+2016-02-26 19:29:36,358 - INFO - For site 453, fitting omega to 0.00 increases LnL by 9.78 relative to fixing omega at 1.00 (P-value 9.7e-06). Fitting took 25.4 seconds.
+
+2016-02-26 19:30:02,398 - INFO - For site 454, fitting omega to 0.00 increases LnL by 4.22 relative to fixing omega at 1.00 (P-value 0.0037). Fitting took 26.2 seconds.
+
+2016-02-26 19:30:47,035 - INFO - For site 455, fitting omega to 0.07 increases LnL by 4.31 relative to fixing omega at 1.00 (P-value 0.0033). Fitting took 45.5 seconds.
+
+2016-02-26 19:31:25,822 - INFO - For site 456, fitting omega to 0.30 increases LnL by 0.35 relative to fixing omega at 1.00 (P-value 0.41). Fitting took 38.2 seconds.
+
+2016-02-26 19:31:48,860 - INFO - For site 457, fitting omega to 0.00 increases LnL by 3.21 relative to fixing omega at 1.00 (P-value 0.011). Fitting took 23.4 seconds.
+
+2016-02-26 19:32:33,928 - INFO - For site 458, fitting omega to 0.10 increases LnL by 3.67 relative to fixing omega at 1.00 (P-value 0.0068). Fitting took 44.3 seconds.
+
+2016-02-26 19:33:05,978 - INFO - For site 459, fitting omega to 0.18 increases LnL by 3.02 relative to fixing omega at 1.00 (P-value 0.014). Fitting took 32.4 seconds.
+
+2016-02-26 19:33:48,038 - INFO - For site 460, fitting omega to 0.56 increases LnL by 0.26 relative to fixing omega at 1.00 (P-value 0.47). Fitting took 41.8 seconds.
+
+2016-02-26 19:34:16,082 - INFO - For site 461, fitting omega to 0.00 increases LnL by 1.26 relative to fixing omega at 1.00 (P-value 0.11). Fitting took 28.7 seconds.
+
+2016-02-26 19:34:38,118 - INFO - For site 462, fitting omega to 0.00 increases LnL by 3.49 relative to fixing omega at 1.00 (P-value 0.0082). Fitting took 21.8 seconds.
+
+2016-02-26 19:35:11,169 - INFO - For site 463, fitting omega to 0.10 increases LnL by 2.32 relative to fixing omega at 1.00 (P-value 0.031). Fitting took 33.1 seconds.
+
+2016-02-26 19:35:51,230 - INFO - For site 464, fitting omega to 0.07 increases LnL by 3.61 relative to fixing omega at 1.00 (P-value 0.0072). Fitting took 40.0 seconds.
+
+2016-02-26 19:36:54,324 - INFO - For site 465, fitting omega to 999.00 increases LnL by 0.72 relative to fixing omega at 1.00 (P-value 0.23). Fitting took 62.6 seconds.
+
+2016-02-26 19:37:21,366 - INFO - For site 466, fitting omega to 2.77 increases LnL by 0.56 relative to fixing omega at 1.00 (P-value 0.29). Fitting took 27.1 seconds.
+
+2016-02-26 19:37:39,396 - INFO - For site 467, fitting omega to 0.00 increases LnL by 4.53 relative to fixing omega at 1.00 (P-value 0.0026). Fitting took 18.4 seconds.
+
+2016-02-26 19:38:07,441 - INFO - For site 468, fitting omega to 0.00 increases LnL by 4.64 relative to fixing omega at 1.00 (P-value 0.0023). Fitting took 28.1 seconds.
+
+2016-02-26 19:38:31,479 - INFO - For site 469, fitting omega to 0.58 increases LnL by 0.30 relative to fixing omega at 1.00 (P-value 0.44). Fitting took 24.1 seconds.
+
+2016-02-26 19:39:01,526 - INFO - For site 470, fitting omega to 0.00 increases LnL by 4.04 relative to fixing omega at 1.00 (P-value 0.0045). Fitting took 30.1 seconds.
+
+2016-02-26 19:39:13,552 - INFO - For site 471, fitting omega to 0.34 increases LnL by 0.00 relative to fixing omega at 1.00 (P-value 1). Fitting took 11.4 seconds.
+
+2016-02-26 19:39:36,590 - INFO - For site 472, fitting omega to 0.00 increases LnL by 2.19 relative to fixing omega at 1.00 (P-value 0.036). Fitting took 23.3 seconds.
+
+2016-02-26 19:39:53,620 - INFO - For site 473, fitting omega to 0.00 increases LnL by 9.23 relative to fixing omega at 1.00 (P-value 1.7e-05). Fitting took 17.4 seconds.
+
+2016-02-26 19:40:05,642 - INFO - For site 474, fitting omega to 0.33 increases LnL by 0.00 relative to fixing omega at 1.00 (P-value 1). Fitting took 11.5 seconds.
+
+2016-02-26 19:40:22,670 - INFO - For site 475, fitting omega to 0.51 increases LnL by 0.26 relative to fixing omega at 1.00 (P-value 0.47). Fitting took 17.1 seconds.
+
+2016-02-26 19:40:46,710 - INFO - For site 476, fitting omega to 0.00 increases LnL by 5.76 relative to fixing omega at 1.00 (P-value 0.00069). Fitting took 24.3 seconds.
+
+2016-02-26 19:41:26,770 - INFO - For site 477, fitting omega to 0.06 increases LnL by 4.63 relative to fixing omega at 1.00 (P-value 0.0023). Fitting took 40.2 seconds.
+
+2016-02-26 19:41:51,811 - INFO - For site 478, fitting omega to 0.00 increases LnL by 9.80 relative to fixing omega at 1.00 (P-value 9.5e-06). Fitting took 24.3 seconds.
+
+2016-02-26 19:42:24,863 - INFO - For site 479, fitting omega to 0.00 increases LnL by 1.45 relative to fixing omega at 1.00 (P-value 0.088). Fitting took 33.9 seconds.
+
+2016-02-26 19:42:36,885 - INFO - For site 480, fitting omega to 0.31 increases LnL by 0.00 relative to fixing omega at 1.00 (P-value 1). Fitting took 11.5 seconds.
+
+2016-02-26 19:43:04,930 - INFO - For site 481, fitting omega to 0.00 increases LnL by 6.09 relative to fixing omega at 1.00 (P-value 0.00048). Fitting took 28.6 seconds.
+
+2016-02-26 19:43:26,966 - INFO - For site 482, fitting omega to 0.00 increases LnL by 2.80 relative to fixing omega at 1.00 (P-value 0.018). Fitting took 21.7 seconds.
+
+2016-02-26 19:43:46,999 - INFO - For site 483, fitting omega to 0.00 increases LnL by 5.50 relative to fixing omega at 1.00 (P-value 0.00091). Fitting took 20.0 seconds.
+
+2016-02-26 19:43:59,021 - INFO - For site 484, fitting omega to 0.33 increases LnL by 0.00 relative to fixing omega at 1.00 (P-value 1). Fitting took 11.5 seconds.
+
+2016-02-26 19:44:25,061 - INFO - For site 485, fitting omega to 0.00 increases LnL by 4.85 relative to fixing omega at 1.00 (P-value 0.0018). Fitting took 26.1 seconds.
+
+2016-02-26 19:44:52,103 - INFO - For site 486, fitting omega to 0.00 increases LnL by 3.33 relative to fixing omega at 1.00 (P-value 0.0098). Fitting took 27.5 seconds.
+
+2016-02-26 19:45:17,143 - INFO - For site 487, fitting omega to 0.62 increases LnL by 0.07 relative to fixing omega at 1.00 (P-value 0.71). Fitting took 25.0 seconds.
+
+2016-02-26 19:45:40,179 - INFO - For site 488, fitting omega to 0.60 increases LnL by 0.15 relative to fixing omega at 1.00 (P-value 0.58). Fitting took 22.6 seconds.
+
+2016-02-26 19:46:04,217 - INFO - For site 489, fitting omega to 0.43 increases LnL by 0.57 relative to fixing omega at 1.00 (P-value 0.29). Fitting took 24.1 seconds.
+
+2016-02-26 19:46:32,262 - INFO - For site 490, fitting omega to 0.00 increases LnL by 2.64 relative to fixing omega at 1.00 (P-value 0.022). Fitting took 28.8 seconds.
+
+2016-02-26 19:46:44,284 - INFO - For site 491, fitting omega to 0.30 increases LnL by 0.00 relative to fixing omega at 1.00 (P-value 1). Fitting took 11.4 seconds.
+
+2016-02-26 19:47:09,323 - INFO - For site 492, fitting omega to 0.00 increases LnL by 4.17 relative to fixing omega at 1.00 (P-value 0.0039). Fitting took 24.8 seconds.
+
+2016-02-26 19:47:31,357 - INFO - For site 493, fitting omega to 0.00 increases LnL by 6.04 relative to fixing omega at 1.00 (P-value 0.00051). Fitting took 22.7 seconds.
+
+2016-02-26 19:47:59,401 - INFO - For site 494, fitting omega to 0.12 increases LnL by 2.33 relative to fixing omega at 1.00 (P-value 0.031). Fitting took 27.9 seconds.
+
+2016-02-26 19:48:23,439 - INFO - For site 495, fitting omega to 1.19 increases LnL by 0.01 relative to fixing omega at 1.00 (P-value 0.88). Fitting took 24.3 seconds.
+
+2016-02-26 19:49:37,548 - INFO - For site 496, fitting omega to 999.00 increases LnL by 0.26 relative to fixing omega at 1.00 (P-value 0.47). Fitting took 74.1 seconds.
+
+2016-02-26 19:50:03,589 - INFO - For site 497, fitting omega to 0.00 increases LnL by 3.49 relative to fixing omega at 1.00 (P-value 0.0082). Fitting took 26.2 seconds.
+
+2016-02-26 19:50:15,611 - INFO - For site 498, fitting omega to 1.78 increases LnL by 0.00 relative to fixing omega at 1.00 (P-value 1). Fitting took 11.4 seconds.
+
+2016-02-26 19:50:37,647 - INFO - For site 499, fitting omega to 0.00 increases LnL by 2.50 relative to fixing omega at 1.00 (P-value 0.025). Fitting took 22.2 seconds.
+
+2016-02-26 19:51:20,711 - INFO - For site 500, fitting omega to 0.06 increases LnL by 4.02 relative to fixing omega at 1.00 (P-value 0.0046). Fitting took 42.9 seconds.
+
+2016-02-26 19:51:40,747 - INFO - For site 501, fitting omega to 0.00 increases LnL by 6.76 relative to fixing omega at 1.00 (P-value 0.00024). Fitting took 20.0 seconds.
+
+2016-02-26 19:52:17,804 - INFO - For site 502, fitting omega to 0.09 increases LnL by 4.67 relative to fixing omega at 1.00 (P-value 0.0022). Fitting took 37.7 seconds.
+
+2016-02-26 19:52:46,849 - INFO - For site 503, fitting omega to 0.00 increases LnL by 5.55 relative to fixing omega at 1.00 (P-value 0.00086). Fitting took 28.8 seconds.
+
+2016-02-26 19:53:03,878 - INFO - For site 504, fitting omega to 0.00 increases LnL by 4.42 relative to fixing omega at 1.00 (P-value 0.0029). Fitting took 16.8 seconds.
+
+2016-02-26 19:53:35,928 - INFO - For site 505, fitting omega to 0.18 increases LnL by 1.06 relative to fixing omega at 1.00 (P-value 0.15). Fitting took 32.5 seconds.
+
+2016-02-26 19:54:16,986 - INFO - For site 506, fitting omega to 0.10 increases LnL by 5.75 relative to fixing omega at 1.00 (P-value 0.0007). Fitting took 40.2 seconds.
+
+2016-02-26 19:54:44,030 - INFO - For site 507, fitting omega to 0.00 increases LnL by 5.12 relative to fixing omega at 1.00 (P-value 0.0014). Fitting took 27.5 seconds.
+
+2016-02-26 19:55:51,132 - INFO - For site 508, fitting omega to 999.00 increases LnL by 0.27 relative to fixing omega at 1.00 (P-value 0.46). Fitting took 66.9 seconds.
+
+2016-02-26 19:56:31,194 - INFO - For site 509, fitting omega to 0.06 increases LnL by 4.99 relative to fixing omega at 1.00 (P-value 0.0016). Fitting took 40.1 seconds.
+
+2016-02-26 19:56:55,233 - INFO - For site 510, fitting omega to 0.00 increases LnL by 4.39 relative to fixing omega at 1.00 (P-value 0.003). Fitting took 24.1 seconds.
+
+2016-02-26 19:57:21,276 - INFO - For site 511, fitting omega to 0.00 increases LnL by 2.39 relative to fixing omega at 1.00 (P-value 0.029). Fitting took 26.4 seconds.
+
+2016-02-26 19:57:52,325 - INFO - For site 512, fitting omega to 0.00 increases LnL by 2.83 relative to fixing omega at 1.00 (P-value 0.017). Fitting took 30.8 seconds.
+
+2016-02-26 19:58:23,372 - INFO - For site 513, fitting omega to 0.13 increases LnL by 3.29 relative to fixing omega at 1.00 (P-value 0.01). Fitting took 30.5 seconds.
+
+2016-02-26 19:58:55,417 - INFO - For site 514, fitting omega to 0.16 increases LnL by 4.04 relative to fixing omega at 1.00 (P-value 0.0045). Fitting took 32.3 seconds.
+
+2016-02-26 19:59:39,480 - INFO - For site 515, fitting omega to 0.15 increases LnL by 0.80 relative to fixing omega at 1.00 (P-value 0.21). Fitting took 44.2 seconds.
+
+2016-02-26 19:59:50,502 - INFO - For site 516, fitting omega to 0.32 increases LnL by 0.00 relative to fixing omega at 1.00 (P-value 1). Fitting took 11.5 seconds.
+
+2016-02-26 20:00:15,542 - INFO - For site 517, fitting omega to 0.00 increases LnL by 5.63 relative to fixing omega at 1.00 (P-value 0.00079). Fitting took 24.2 seconds.
+
+2016-02-26 20:00:35,575 - INFO - For site 518, fitting omega to 0.00 increases LnL by 4.85 relative to fixing omega at 1.00 (P-value 0.0019). Fitting took 20.0 seconds.
+
+2016-02-26 20:00:55,609 - INFO - For site 519, fitting omega to 0.00 increases LnL by 5.74 relative to fixing omega at 1.00 (P-value 0.00071). Fitting took 20.0 seconds.
+
+2016-02-26 20:01:21,650 - INFO - For site 520, fitting omega to 0.00 increases LnL by 2.80 relative to fixing omega at 1.00 (P-value 0.018). Fitting took 26.8 seconds.
+
+2016-02-26 20:02:00,711 - INFO - For site 521, fitting omega to 0.08 increases LnL by 2.84 relative to fixing omega at 1.00 (P-value 0.017). Fitting took 38.7 seconds.
+
+2016-02-26 20:03:06,810 - INFO - For site 522, fitting omega to 999.00 increases LnL by 0.29 relative to fixing omega at 1.00 (P-value 0.45). Fitting took 66.4 seconds.
+
+2016-02-26 20:04:12,908 - INFO - For site 523, fitting omega to 3.51 increases LnL by 0.03 relative to fixing omega at 1.00 (P-value 0.81). Fitting took 65.4 seconds.
+
+2016-02-26 20:04:37,948 - INFO - For site 524, fitting omega to 0.80 increases LnL by 0.04 relative to fixing omega at 1.00 (P-value 0.77). Fitting took 25.5 seconds.
+
+2016-02-26 20:05:01,987 - INFO - For site 525, fitting omega to 0.52 increases LnL by 0.32 relative to fixing omega at 1.00 (P-value 0.43). Fitting took 24.1 seconds.
+
+2016-02-26 20:05:25,025 - INFO - For site 526, fitting omega to 0.00 increases LnL by 2.16 relative to fixing omega at 1.00 (P-value 0.038). Fitting took 23.3 seconds.
+
+2016-02-26 20:05:56,073 - INFO - For site 527, fitting omega to 0.76 increases LnL by 0.02 relative to fixing omega at 1.00 (P-value 0.85). Fitting took 30.3 seconds.
+
+2016-02-26 20:06:21,113 - INFO - For site 528, fitting omega to 0.43 increases LnL by 0.17 relative to fixing omega at 1.00 (P-value 0.56). Fitting took 25.4 seconds.
+
+2016-02-26 20:06:48,156 - INFO - For site 529, fitting omega to 0.00 increases LnL by 2.50 relative to fixing omega at 1.00 (P-value 0.025). Fitting took 27.0 seconds.
+
+2016-02-26 20:06:59,176 - INFO - For site 530, fitting omega to 1.72 increases LnL by 0.00 relative to fixing omega at 1.00 (P-value 1). Fitting took 11.4 seconds.
+
+2016-02-26 20:07:29,223 - INFO - For site 531, fitting omega to 0.00 increases LnL by 0.96 relative to fixing omega at 1.00 (P-value 0.17). Fitting took 30.2 seconds.
+
+2016-02-26 20:07:54,263 - INFO - For site 532, fitting omega to 0.00 increases LnL by 2.26 relative to fixing omega at 1.00 (P-value 0.033). Fitting took 24.9 seconds.
+
+2016-02-26 20:08:06,284 - INFO - For site 533, fitting omega to 0.35 increases LnL by 0.00 relative to fixing omega at 1.00 (P-value 1). Fitting took 11.4 seconds.
+
+2016-02-26 20:08:24,314 - INFO - For site 534, fitting omega to 0.00 increases LnL by 5.97 relative to fixing omega at 1.00 (P-value 0.00055). Fitting took 18.4 seconds.
+
+2016-02-26 20:09:20,397 - INFO - For site 535, fitting omega to 999.00 increases LnL by 1.96 relative to fixing omega at 1.00 (P-value 0.048). Fitting took 56.3 seconds.
+
+2016-02-26 20:09:32,419 - INFO - For site 536, fitting omega to 1.72 increases LnL by 0.00 relative to fixing omega at 1.00 (P-value 1). Fitting took 11.4 seconds.
+
+2016-02-26 20:10:08,475 - INFO - For site 537, fitting omega to 0.00 increases LnL by 1.64 relative to fixing omega at 1.00 (P-value 0.07). Fitting took 35.9 seconds.
+
+2016-02-26 20:10:32,514 - INFO - For site 538, fitting omega to 0.00 increases LnL by 4.15 relative to fixing omega at 1.00 (P-value 0.004). Fitting took 24.3 seconds.
+
+2016-02-26 20:10:59,557 - INFO - For site 539, fitting omega to 0.00 increases LnL by 2.61 relative to fixing omega at 1.00 (P-value 0.022). Fitting took 26.8 seconds.
+
+2016-02-26 20:11:25,599 - INFO - For site 540, fitting omega to 0.00 increases LnL by 3.70 relative to fixing omega at 1.00 (P-value 0.0065). Fitting took 26.3 seconds.
+
+2016-02-26 20:11:51,640 - INFO - For site 541, fitting omega to 0.00 increases LnL by 2.93 relative to fixing omega at 1.00 (P-value 0.015). Fitting took 26.4 seconds.
+
+2016-02-26 20:12:43,719 - INFO - For site 542, fitting omega to 0.11 increases LnL by 3.29 relative to fixing omega at 1.00 (P-value 0.01). Fitting took 51.8 seconds.
+
+2016-02-26 20:12:54,741 - INFO - For site 543, fitting omega to 1.71 increases LnL by 0.00 relative to fixing omega at 1.00 (P-value 1). Fitting took 11.4 seconds.
+
+2016-02-26 20:13:30,797 - INFO - For site 544, fitting omega to 0.00 increases LnL by 1.00 relative to fixing omega at 1.00 (P-value 0.16). Fitting took 35.7 seconds.
+
+2016-02-26 20:13:41,817 - INFO - For site 545, fitting omega to 1.71 increases LnL by 0.00 relative to fixing omega at 1.00 (P-value 1). Fitting took 11.4 seconds.
+
+2016-02-26 20:13:53,840 - INFO - For site 546, fitting omega to 1.72 increases LnL by 0.00 relative to fixing omega at 1.00 (P-value 1). Fitting took 11.4 seconds.
+
+2016-02-26 20:14:28,894 - INFO - For site 547, fitting omega to 0.00 increases LnL by 1.57 relative to fixing omega at 1.00 (P-value 0.077). Fitting took 35.7 seconds.
+
+2016-02-26 20:15:35,995 - INFO - For site 548, fitting omega to 999.00 increases LnL by 0.49 relative to fixing omega at 1.00 (P-value 0.32). Fitting took 66.4 seconds.
+
+2016-02-26 20:16:18,062 - INFO - For site 549, fitting omega to 0.04 increases LnL by 6.79 relative to fixing omega at 1.00 (P-value 0.00023). Fitting took 41.9 seconds.
+
+2016-02-26 20:16:36,093 - INFO - For site 550, fitting omega to 0.00 increases LnL by 5.36 relative to fixing omega at 1.00 (P-value 0.0011). Fitting took 18.4 seconds.
+
+2016-02-26 20:16:47,113 - INFO - For site 551, fitting omega to 0.30 increases LnL by 0.00 relative to fixing omega at 1.00 (P-value 1). Fitting took 11.4 seconds.
+
+2016-02-26 20:16:59,131 - INFO - For site 552, fitting omega to 0.30 increases LnL by 0.00 relative to fixing omega at 1.00 (P-value 1). Fitting took 11.4 seconds.
+
+2016-02-26 20:17:22,169 - INFO - For site 553, fitting omega to 0.00 increases LnL by 4.44 relative to fixing omega at 1.00 (P-value 0.0029). Fitting took 22.8 seconds.
+
+2016-02-26 20:17:43,204 - INFO - For site 554, fitting omega to 0.00 increases LnL by 7.19 relative to fixing omega at 1.00 (P-value 0.00015). Fitting took 21.6 seconds.
+
+2016-02-26 20:17:55,225 - INFO - For site 555, fitting omega to 0.34 increases LnL by 0.00 relative to fixing omega at 1.00 (P-value 1). Fitting took 11.5 seconds.
+
+2016-02-26 20:18:21,268 - INFO - For site 556, fitting omega to 0.00 increases LnL by 2.00 relative to fixing omega at 1.00 (P-value 0.046). Fitting took 26.5 seconds.
+
+2016-02-26 20:18:53,316 - INFO - For site 557, fitting omega to 0.00 increases LnL by 2.46 relative to fixing omega at 1.00 (P-value 0.027). Fitting took 31.7 seconds.
+
+2016-02-26 20:19:15,347 - INFO - For site 558, fitting omega to 0.00 increases LnL by 3.27 relative to fixing omega at 1.00 (P-value 0.011). Fitting took 22.6 seconds.
+
+2016-02-26 20:19:39,388 - INFO - For site 559, fitting omega to 0.00 increases LnL by 1.63 relative to fixing omega at 1.00 (P-value 0.071). Fitting took 23.6 seconds.
+
+2016-02-26 20:20:10,438 - INFO - For site 560, fitting omega to 0.00 increases LnL by 2.74 relative to fixing omega at 1.00 (P-value 0.019). Fitting took 31.7 seconds.
+
+2016-02-26 20:20:45,491 - INFO - For site 561, fitting omega to 0.23 increases LnL by 0.49 relative to fixing omega at 1.00 (P-value 0.32). Fitting took 34.6 seconds.
+
+2016-02-26 20:20:56,512 - INFO - For site 562, fitting omega to 0.31 increases LnL by 0.00 relative to fixing omega at 1.00 (P-value 1). Fitting took 11.4 seconds.
+
+2016-02-26 20:21:33,571 - INFO - For site 563, fitting omega to 0.00 increases LnL by 1.51 relative to fixing omega at 1.00 (P-value 0.083). Fitting took 36.4 seconds.
+
+2016-02-26 20:21:53,606 - INFO - For site 564, fitting omega to 0.00 increases LnL by 4.53 relative to fixing omega at 1.00 (P-value 0.0026). Fitting took 20.1 seconds.
+
+2016-02-26 20:21:53,681 - INFO - Now writing the full results of the omega-by-site analysis to phydms_output_YNGKP_M8_omegabysite.txt
+
+2016-02-26 20:21:53,695 - INFO - Successful completion of phydms
