@@ -1,3 +1,10 @@
+*.sbatch
+*.pyc
+slurm-*.out
+*_jobid
+*_jobstatus
+*_errors
+FASTQ_files/
 *._.DS_Store*
 *.DS_Store*
 *.gz
