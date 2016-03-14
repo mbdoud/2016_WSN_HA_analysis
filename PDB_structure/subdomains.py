@@ -34,7 +34,8 @@ cmd.show('cartoon', '1RVX_trimer and chain A')
 cmd.set('bg_rgb','[1,1,1]') # white
 cmd.set('antialias','2')
 cmd.set('ray_opaque_background','off')
-cmd.select('None')
+#cmd.select('None')
+cmd.deselect()
 
 png_width = 1600
 png_height = 1200
